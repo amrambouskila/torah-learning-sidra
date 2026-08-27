@@ -1,0 +1,33 @@
+{
+  "works": {
+    "torah": 6,
+    "neviim": 21,
+    "ketuvim": 13,
+    "mishnah": 63,
+    "bavli": 37,
+    "mishneh_torah": 84,
+    "shulchan_aruch": 4,
+    "mussar": 34,
+    "chassidus": 11,
+    "midrash": 1,
+    "parsha_weekly": 3
+  },
+  "units": {
+    "torah": 619,
+    "neviim": 380,
+    "ketuvim": 362,
+    "mishnah": 525,
+    "bavli": 5349,
+    "mishneh_torah": 15143,
+    "shulchan_aruch": 1705,
+    "mussar": 572,
+    "chassidus": 1396,
+    "midrash": 1037,
+    "parsha_weekly": 162
+  },
+  "stored_units": 432,
+  "topic_links": 121289,
+  "total_derivable_units": 27250,
+  "ein_mishpat_links": 118805,
+  "tur_bridge_links": 2484
+}

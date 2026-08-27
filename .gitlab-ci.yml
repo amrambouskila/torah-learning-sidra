@@ -1,0 +1,242 @@
+# Torah Learning Sidra — CI
+#
+# live-marked tests are excluded everywhere: they hit the real Sefaria API and stream ~656 MB of
+# link export. They are the guard against a fixture that encodes the same wrong belief as the code
+# reading it, and they are run deliberately, on a workstation, not on every push.
+
+stages:
+  - lint
+  - sast
+  - test
+  - coverage
+  - build
+  - docker-build
+
+default:
+  image: python:3.13-slim
+  before_script:
+    - pip install --no-cache-dir uv
+    - cd backend && uv sync --all-groups --frozen
+
+variables:
+  UV_CACHE_DIR: "$CI_PROJECT_DIR/.uv-cache"
+  POSTGRES_DB: sidra
+  POSTGRES_USER: sidra
+  POSTGRES_PASSWORD: sidra_dev
+
+cache:
+  key:
+    files: [backend/uv.lock]
+  paths: [.uv-cache]
+
+# ------------------------------------------------------------------ lint
+
+ruff:
+  stage: lint
+  script:
+    - uv run ruff check .
+    - uv run ruff format --check .
+
+# The frontend runs on Node, not the default python image. pnpm is pinned in package.json so
+# corepack cannot pull a version needing a newer Node than this base.
+.frontend:
+  image: node:22-alpine
+  before_script:
+    - corepack enable
+    - cd frontend && pnpm install --frozen-lockfile
+  cache:
+    key:
+      files: [frontend/pnpm-lock.yaml]
+    paths: [frontend/node_modules]
+
+eslint:
+  extends: .frontend
+  stage: lint
+  script:
+    # security/detect-* and no-unsanitized are warnings by default; --max-warnings 0 makes them gate.
+    - pnpm lint
+
+# ------------------------------------------------------------------ sast
+
+semgrep:
+  stage: sast
+  image: semgrep/semgrep:latest
+  before_script: []
+  script:
+    # `semgrep scan`, not `semgrep ci`: the ci subcommand rejects --severity and --error and
+    # exits 2 with a usage error. Explicit rulesets, not `--config auto`: auto refuses to run with
+    # metrics off and the set it fetches is not pinned, so two runs a month apart gate differently.
+    # Three rules are excluded rather than suppressed inline: all three match a whole file rather
+    # than a line, so a nosemgrep comment has no match to attach to and silently does nothing.
+    # missing-user: both images run as root deliberately; the reason is written above the CMD in each Dockerfile
+    # request-host-used: nothing behind the proxy reads the Host header; the reason is written above the directive
+    # github-actions-mutable-action-tag: only relevant to the GitHub port, where every action is
+    #   published by GitHub itself or the tool's own vendor and tracked at a major tag.
+    - >
+      semgrep scan --metrics=off --config p/default --config p/owasp-top-ten --config p/python --config p/typescript --config p/react --config p/docker
+      --exclude node_modules --exclude .venv --exclude dist --exclude coverage
+      --exclude-rule dockerfile.security.missing-user.missing-user
+      --exclude-rule generic.nginx.security.request-host-used.request-host-used
+      --exclude-rule yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag
+      --gitlab-sast-output=gl-sast-report.json
+    # Everything is reported above; only ERROR fails the pipeline.
+    - >
+      semgrep scan --metrics=off --config p/default --config p/owasp-top-ten --config p/python --config p/typescript --config p/react --config p/docker
+      --exclude node_modules --exclude .venv --exclude dist --exclude coverage
+      --exclude-rule dockerfile.security.missing-user.missing-user
+      --exclude-rule generic.nginx.security.request-host-used.request-host-used
+      --exclude-rule yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag
+      --severity ERROR --error
+  artifacts:
+    when: always
+    reports:
+      sast: gl-sast-report.json
+    expire_in: 1 week
+
+dependency-audit:
+  stage: sast
+  script:
+    # The locked dependencies, not the ambient environment: --strict counts an un-auditable
+    # distribution as a failure, and the local `sidra` package is neither on PyPI nor something an
+    # audit has anything to say about. --no-emit-project drops it and keeps --strict meaningful.
+    - uv export --no-emit-project --format requirements-txt --no-hashes -o requirements-audit.txt
+    - uv run pip-audit --strict -r requirements-audit.txt
+
+frontend-audit:
+  extends: .frontend
+  stage: sast
+  script:
+    - pnpm audit --audit-level=high
+
+gitleaks:
+  stage: sast
+  image:
+    name: zricethezav/gitleaks:latest
+    entrypoint: [""]
+  before_script: []
+  script:
+    # The config allowlists generated directories, so the same command is runnable on a
+    # workstation where .venv and node_modules exist and CI's fresh clone has neither.
+    - gitleaks detect --no-git --redact --source . --config gitleaks.toml
+
+# ------------------------------------------------------------------ test
+
+pytest:
+  stage: test
+  services:
+    - name: postgres:16-alpine
+      alias: postgres
+  variables:
+    SIDRA_POSTGRES_HOST: postgres
+    SIDRA_POSTGRES_PORT: "5432"
+  before_script:
+    - pip install --no-cache-dir uv postgresql-client || pip install --no-cache-dir uv
+    - cd backend && uv sync --all-groups --frozen
+    # The compose stack creates sidra_test via an init script; CI's service does not.
+    - >
+      uv run python -c "
+      import asyncio, asyncpg;
+      async def m():
+          c = await asyncpg.connect(user='sidra', password='sidra_dev', host='postgres', database='sidra');
+          await c.execute('CREATE DATABASE sidra_test OWNER sidra');
+          await c.close();
+      asyncio.run(m())
+      "
+  script:
+    - uv run pytest -m "not live" --junitxml=junit-unit.xml --cov=sidra --cov-report=xml:coverage.xml
+  artifacts:
+    when: always                       # a failed job must still publish its report
+    reports:
+      junit: backend/junit-unit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: backend/coverage.xml
+    expire_in: 1 week
+
+vitest:
+  extends: .frontend
+  stage: test
+  script:
+    # Both reporters: the junit one alone would lose the human-readable console log.
+    - pnpm test -- --reporter=default --reporter=junit --outputFile.junit=junit-frontend.xml
+  artifacts:
+    when: always
+    reports:
+      junit: frontend/junit-frontend.xml
+    expire_in: 1 week
+
+# ------------------------------------------------------------------ coverage
+
+coverage-gate:
+  stage: coverage
+  services:
+    - name: postgres:16-alpine
+      alias: postgres
+  variables:
+    SIDRA_POSTGRES_HOST: postgres
+    SIDRA_POSTGRES_PORT: "5432"
+  before_script:
+    - pip install --no-cache-dir uv
+    - cd backend && uv sync --all-groups --frozen
+    - >
+      uv run python -c "
+      import asyncio, asyncpg;
+      async def m():
+          c = await asyncpg.connect(user='sidra', password='sidra_dev', host='postgres', database='sidra');
+          await c.execute('CREATE DATABASE sidra_test OWNER sidra');
+          await c.close();
+      asyncio.run(m())
+      "
+  script:
+    # If this fails, add the missing test. Never lower the threshold.
+    - uv run pytest -m "not live" --cov=sidra --cov-fail-under=100 -q
+  coverage: '/^TOTAL.*\s+(\d+%)$/'
+
+frontend-coverage-gate:
+  extends: .frontend
+  stage: coverage
+  script:
+    # If this fails, add the missing test. Never lower the threshold.
+    - pnpm coverage
+  coverage: '/All files\s*\|\s*([\d.]+)/'
+
+# ------------------------------------------------------------------ build
+
+build:
+  stage: build
+  script:
+    - uv build
+  artifacts:
+    paths: [backend/dist/]
+    expire_in: 1 week
+
+frontend-build:
+  extends: .frontend
+  stage: build
+  script:
+    # `tsc -b` runs the strict app config, which is stricter than a bare --noEmit at the root.
+    - pnpm build
+  artifacts:
+    paths: [frontend/dist/]
+    expire_in: 1 week
+
+# ------------------------------------------------------------------ docker-build
+
+docker-build:
+  stage: docker-build
+  image: docker:27
+  services: [docker:27-dind]
+  before_script: []
+  script:
+    - docker build -t sidra-backend:$CI_COMMIT_SHORT_SHA ./backend
+    - docker build -t sidra-frontend:$CI_COMMIT_SHORT_SHA ./frontend
+    - >
+      docker run --rm
+      -v /var/run/docker.sock:/var/run/docker.sock
+      aquasec/trivy:latest image
+      --severity HIGH,CRITICAL --exit-code 1 sidra-backend:$CI_COMMIT_SHORT_SHA
+    - >
+      docker run --rm
+      -v /var/run/docker.sock:/var/run/docker.sock
+      aquasec/trivy:latest image
+      --severity HIGH,CRITICAL --exit-code 1 sidra-frontend:$CI_COMMIT_SHORT_SHA

@@ -1,0 +1,1135 @@
+/* --- shell ------------------------------------------------------------------------------ */
+
+.sidebar {
+  border-right: 1px solid var(--edge);
+  padding: var(--gap-5) var(--gap-4);
+  background: var(--ink-900);
+}
+
+.sidebar__brand {
+  font-size: var(--he-step-5);
+  color: var(--paper);
+  margin: 0 0 var(--gap-5);
+  letter-spacing: 0.04em;
+}
+
+.sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--gap-3);
+  padding: 0.45rem var(--gap-3);
+  border-radius: var(--radius);
+  color: var(--mist-400);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background var(--motion-fast) ease, color var(--motion-fast) ease;
+}
+
+.sidebar__link:hover {
+  background: var(--ink-850);
+  color: var(--paper);
+}
+
+.sidebar__link.active {
+  background: var(--accent-soft);
+  border-color: var(--edge-strong);
+  color: var(--paper);
+}
+
+.sidebar__he {
+  font-size: var(--he-step-3);
+}
+
+.sidebar__en {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.main {
+  min-width: 0;
+}
+
+/* --- today ------------------------------------------------------------------------------ */
+
+.today__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-5);
+  flex-wrap: wrap;
+}
+
+.today__filters {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-2);
+  flex-wrap: wrap;
+}
+
+.today__yomtov {
+  margin-inline-start: var(--gap-3);
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--daily);
+}
+
+.group {
+  margin-top: var(--gap-6);
+}
+
+.group__title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--gap-3);
+  padding-bottom: var(--gap-2);
+  border-bottom: 1px solid var(--edge);
+}
+
+.group__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(11rem, 21rem) minmax(0, 1fr) auto auto minmax(0, auto) auto;
+  align-items: center;
+  gap: var(--gap-4);
+  padding: 0.7rem var(--gap-2);
+  border-bottom: 1px solid var(--edge);
+}
+
+.card:hover {
+  background: linear-gradient(90deg, var(--accent-soft), transparent 45%);
+}
+
+/* `align-items: start` so an RTL child shrinks to its text instead of stretching the column and
+   drifting away from the transliteration underneath it. */
+.card__names,
+.card__position {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.1rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.card__names > *,
+.card__position > * {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__title {
+  font-size: var(--he-step-4);
+}
+
+.card__ref {
+  font-size: var(--he-step-2);
+}
+
+.card__empty {
+  color: var(--mist-500);
+  font-style: italic;
+}
+
+.card__tags {
+  display: flex;
+  gap: var(--gap-1);
+  flex-wrap: wrap;
+}
+
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-2);
+}
+
+.card__open,
+.card__advance {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius);
+  color: var(--mist-400);
+  text-decoration: none;
+  transition: border-color var(--motion-fast) ease, color var(--motion-fast) ease;
+}
+
+.card__open:hover,
+.card__advance:not(:disabled):hover {
+  border-color: var(--accent);
+  color: var(--paper);
+}
+
+.card__advance:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* --- the compressed rail ---------------------------------------------------------------- */
+
+.mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.mini__tick {
+  width: 3px;
+  height: 0.85rem;
+  border-radius: 1px;
+  background: var(--ink-700);
+}
+
+.mini__tick[data-state="done"] {
+  background: var(--accent);
+}
+
+.mini__tick[data-state="between"] {
+  background: var(--behind-dim);
+}
+
+.mini__tick[data-state="scheduled"] {
+  background: var(--behind);
+  height: 1.15rem;
+}
+
+/* --- debt badge ------------------------------------------------------------------------- */
+
+.debt {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  white-space: nowrap;
+  font-size: var(--step-2);
+}
+
+.debt__value {
+  font-size: var(--step-4);
+  font-weight: 500;
+}
+
+.debt__suffix {
+  color: var(--mist-500);
+}
+
+.debt[data-tone="behind"] .debt__value {
+  color: var(--behind);
+}
+
+.debt[data-tone="ahead"] .debt__value {
+  color: var(--ahead);
+}
+
+.debt[data-tone="level"] .debt__suffix,
+.debt[data-tone="done"] .debt__suffix {
+  color: var(--ahead);
+}
+
+.debt[data-tone="waiting"] .debt__value {
+  color: var(--mist-400);
+}
+
+/* --- pills, banners, toasts -------------------------------------------------------------- */
+
+.pill {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--edge-strong);
+  border-radius: 999px;
+  color: var(--mist-400);
+}
+
+.pill--button[data-active="true"] {
+  border-color: var(--accent);
+  color: var(--paper);
+  background: var(--accent-soft);
+}
+
+.banner {
+  border: 1px solid var(--edge-strong);
+  border-left: 3px solid var(--behind);
+  border-radius: var(--radius);
+  padding: var(--gap-3) var(--gap-4);
+  background: var(--ink-850);
+  margin-bottom: var(--gap-5);
+}
+
+.banner[data-tone="waiting"] {
+  border-left-color: var(--daily);
+}
+
+.banner__title {
+  margin: 0 0 0.2rem;
+  color: var(--paper);
+}
+
+.banner__detail {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  color: var(--mist-400);
+}
+
+.toasts {
+  position: fixed;
+  right: var(--gap-5);
+  bottom: var(--gap-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  z-index: 20;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-3);
+  padding: 0.5rem var(--gap-3);
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius);
+  background: var(--ink-800);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 45%);
+}
+
+.toast[data-tone="success"] {
+  border-left: 3px solid var(--ahead);
+}
+
+.toast[data-tone="failure"] {
+  border-left: 3px solid var(--behind);
+}
+
+.toast__close {
+  color: var(--mist-500);
+  font-size: var(--step-4);
+  line-height: 1;
+}
+
+/* --- dialog ------------------------------------------------------------------------------ */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgb(0 0 0 / 60%);
+  z-index: 30;
+}
+
+.dialog {
+  width: min(28rem, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-4);
+  padding: var(--gap-5);
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius-lg);
+  background: var(--ink-850);
+  box-shadow: 0 24px 60px rgb(0 0 0 / 55%);
+}
+
+.dialog__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
+.dialog__catchup {
+  align-self: flex-start;
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  color: var(--behind);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.dialog__note {
+  margin: 0;
+  color: var(--mist-500);
+  font-size: var(--step-2);
+}
+
+/* The units in front of him, by their real addresses. No ordinal appears anywhere. An option
+   holds text rather than elements, so the Hebrew cannot be wrapped in .he — the face is set on
+   the whole control instead, and the Latin address rides along in the same serif. */
+.advance__picker select {
+  width: 100%;
+  font-family: var(--hebrew);
+  font-size: var(--he-step-3);
+}
+
+/* The sefer a run of addresses belongs to. A track spanning books repeats its addresses in
+   every one of them, so this header is what tells two identical-looking options apart. */
+.advance__picker optgroup {
+  font-family: var(--latin);
+  font-size: var(--step-0);
+  color: var(--mist-500);
+}
+
+.dialog__confirm:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.dialog__warn {
+  margin: 0;
+  padding: var(--gap-2) var(--gap-3);
+  border-left: 3px solid var(--behind);
+  border-radius: var(--radius);
+  background: var(--behind-dim);
+  color: var(--paper);
+  font-size: var(--step-2);
+}
+
+.dialog__presets {
+  display: flex;
+  gap: var(--gap-3);
+  flex-wrap: wrap;
+}
+
+.dialog__clear {
+  margin-inline-end: auto;
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius);
+  color: var(--behind);
+}
+
+.track__head-right {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-3);
+}
+
+.dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gap-2);
+}
+
+.dialog__cancel,
+.dialog__confirm {
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius);
+}
+
+.dialog__confirm {
+  border-color: var(--accent);
+  color: var(--paper);
+  background: var(--accent-soft);
+}
+
+/* --- track ------------------------------------------------------------------------------- */
+
+.track__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-5);
+  padding-bottom: var(--gap-4);
+  border-bottom: 1px solid var(--edge);
+}
+
+.track__facts {
+  display: flex;
+  gap: var(--gap-6);
+  flex-wrap: wrap;
+  margin: var(--gap-4) 0 var(--gap-5);
+}
+
+.track__facts dd {
+  margin: 0.2rem 0 0;
+}
+
+.track__of {
+  color: var(--mist-500);
+  font-size: var(--step-2);
+}
+
+/* --- tables ------------------------------------------------------------------------------ */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step-2);
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.55rem var(--gap-3);
+  border-bottom: 1px solid var(--edge);
+  vertical-align: baseline;
+}
+
+.table thead th {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mist-500);
+  font-weight: 400;
+}
+
+/* Hebrew above its transliteration, as everywhere else — not run together on one line. */
+.table tbody th {
+  font-weight: 400;
+}
+
+.table tbody th > * {
+  display: block;
+}
+
+.table td .num {
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--ink-650);
+}
+
+.roadmap__sort {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-2);
+  margin-bottom: var(--gap-4);
+}
+
+/* --- chavrusas --------------------------------------------------------------------------- */
+
+.person {
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-4);
+  margin-bottom: var(--gap-4);
+  background: var(--ink-900);
+}
+
+.person__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--gap-4);
+}
+
+.person__name {
+  font-size: var(--step-5);
+  color: var(--paper);
+}
+
+.person__stale {
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  color: var(--mist-400);
+}
+
+.person__stale[data-never="true"] {
+  color: var(--behind);
+}
+
+.person__notes {
+  color: var(--mist-500);
+  font-style: italic;
+}
+
+.person__tracks {
+  list-style: none;
+  margin: var(--gap-3) 0;
+  padding: 0;
+}
+
+.person__track {
+  display: flex;
+  align-items: baseline;
+  gap: var(--gap-3);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--edge);
+}
+
+.person__empty {
+  color: var(--mist-500);
+  font-style: italic;
+}
+
+.log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.log__row {
+  display: grid;
+  grid-template-columns: 7rem auto 8rem minmax(0, 1fr);
+  gap: var(--gap-3);
+  padding: 0.3rem 0;
+  font-size: var(--step-1);
+  color: var(--mist-400);
+}
+
+.log__note {
+  color: var(--mist-500);
+  font-style: italic;
+}
+
+/* --- tags -------------------------------------------------------------------------------- */
+
+.tagform {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--gap-3);
+  margin-bottom: var(--gap-4);
+}
+
+.tagform__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
+.tagform__submit {
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  padding: 0.42rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--paper);
+}
+
+.tagform__error {
+  color: var(--behind);
+  font-family: var(--mono);
+  font-size: var(--step-1);
+}
+
+.taglist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.taglist__row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 14rem) auto minmax(6rem, 8rem) auto auto;
+  align-items: center;
+  gap: var(--gap-3);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--edge);
+}
+
+.taglist__name {
+  color: var(--paper);
+}
+
+.taglist__count {
+  color: var(--mist-500);
+  font-size: var(--step-1);
+}
+
+.taglist__action {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mist-400);
+}
+
+.taglist__action--danger:hover {
+  color: var(--behind);
+}
+
+/* --- alignment --------------------------------------------------------------------------- */
+
+.align__picker {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+  max-width: 22rem;
+  margin-bottom: var(--gap-5);
+}
+
+.align {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.align__row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr) 3.5rem 4rem auto;
+  align-items: center;
+  gap: var(--gap-3);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--edge);
+}
+
+.align__bar {
+  display: block;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: var(--ink-800);
+  overflow: hidden;
+}
+
+.align__fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.align__row[data-inferred="true"] .align__fill {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--inferred) 0 4px,
+    transparent 4px 8px
+  );
+}
+
+.align__share {
+  color: var(--paper);
+}
+
+.align__links {
+  color: var(--mist-500);
+  font-size: var(--step-1);
+}
+
+.align__mark {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--inferred);
+}
+
+.align__legend,
+.align__empty {
+  margin-top: var(--gap-4);
+  color: var(--mist-500);
+  max-width: 62ch;
+}
+
+.align__he {
+  display: block;
+  margin-top: var(--gap-5);
+  font-size: var(--he-step-4);
+  color: var(--mist-500);
+}
+
+/* Stats: whether the gap is opening or closing. Cells are signed, never a tick. */
+.stats__standing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-3);
+  margin-bottom: var(--gap-3);
+}
+
+.stats__count {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 4.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  font-size: var(--step-4);
+}
+
+.stats__count[data-bucket="behind"] {
+  border-color: var(--behind);
+}
+
+.stats__count--streak {
+  margin-left: auto;
+}
+
+.stats__knobs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
+  margin-bottom: var(--gap-3);
+}
+
+.stats__clamp {
+  color: var(--mist-500);
+  font-size: var(--step-1);
+}
+
+/* The grid is wide by construction; it scrolls inside itself rather than moving the page. */
+.stats__scroll {
+  overflow-x: auto;
+}
+
+.stats__grid td,
+.stats__grid th {
+  vertical-align: middle;
+}
+
+/* The name column keeps its width so the cells sit against it; the summary takes the slack. */
+.stats__grid th:first-child,
+.stats__grid th[scope="row"] {
+  min-width: 15rem;
+  white-space: nowrap;
+}
+
+.stats__grid th[scope="row"] .gloss {
+  display: block;
+}
+
+.stats__days {
+  padding-bottom: 0.35rem;
+}
+
+.stats__grid .stats__movement {
+  width: 100%;
+  padding-left: var(--gap-3);
+}
+
+.stats__span {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-2);
+  color: var(--mist-500);
+  font-family: var(--mono);
+  font-size: var(--step-0);
+}
+
+.stats__day {
+  width: 0.85rem;
+  padding: 0;
+}
+
+.stats__cell {
+  width: 0.85rem;
+  padding: 0;
+  border: 1px solid var(--ink-900);
+  background: var(--ink-850);
+}
+
+/* The gap widened that day: billed more than was learned. */
+.stats__cell[data-state="opened"] {
+  background: var(--behind);
+}
+
+/* The gap closed: learned more than was billed. */
+.stats__cell[data-state="closed"] {
+  background: var(--ahead);
+}
+
+.stats__movement {
+  white-space: nowrap;
+  font-size: var(--step-1);
+}
+
+.stats__learned {
+  color: var(--mist-500);
+}
+
+.stats__empty {
+  color: var(--mist-500);
+}
+
+/* Tags on the Track screen: every tag there is, lit when this track wears it. */
+.track__tags {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  margin: var(--gap-3) 0;
+}
+
+.track__tagrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
+}
+
+.track__notags {
+  color: var(--mist-500);
+  font-size: var(--step-1);
+}
+
+/* Why most tracks are absent from the Alignment picker. */
+.align__scope {
+  color: var(--mist-500);
+  font-size: var(--step-1);
+  margin-bottom: var(--gap-3);
+}
+
+/* The second, honest scale on a roadmap row: this track is one masechta of a much longer road. */
+.road__wider {
+  display: block;
+  color: var(--mist-500);
+  font-size: var(--step-0);
+}
+
+/* Sequence: which masechta the code asks for next, and how far off it is. */
+.seq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+}
+
+.seq__at {
+  color: var(--mist-500);
+  margin-bottom: var(--gap-3);
+}
+
+.seq__stage {
+  padding: var(--gap-2) var(--gap-3);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+}
+
+.seq__stage[data-current="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.seq__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
+}
+
+.seq__when {
+  margin-left: auto;
+  color: var(--mist-500);
+  font-family: var(--mono);
+  font-size: var(--step-1);
+}
+
+.seq__now {
+  margin-left: auto;
+}
+
+.seq__again {
+  color: var(--mist-500);
+}
+
+.seq__books {
+  margin: 0.35rem 0 0;
+  font-size: var(--step-1);
+}
+
+.seq__evidence,
+.seq__pace {
+  margin: 0.2rem 0 0;
+  color: var(--mist-500);
+  font-size: var(--step-0);
+}
+
+.seq__pace {
+  color: var(--paper);
+}
+
+/* --- maintenance -------------------------------------------------------------------------- */
+
+/*
+ * Hairline blocks, like the dialog but flat: a shadow would say "on top of", and these sit in the
+ * page rather than over it.
+ */
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-3);
+  margin-top: var(--gap-5);
+  padding: var(--gap-4) var(--gap-5);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-lg);
+  background: var(--ink-850);
+}
+
+.panel__title {
+  margin: 0;
+  font-family: var(--latin);
+  font-size: var(--step-4);
+  font-weight: 500;
+  color: var(--paper);
+}
+
+.panel__note {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--mist-500);
+  font-size: var(--step-2);
+}
+
+/* Every countable value is mono with tabular figures, as it is everywhere else in the app. */
+.panel__stat {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  font-variant-numeric: tabular-nums;
+  color: var(--mist-200);
+}
+
+.panel__action {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius);
+  color: var(--mist-400);
+  background: none;
+  transition: border-color var(--motion-fast) ease, color var(--motion-fast) ease;
+}
+
+.panel__action:not(:disabled):hover {
+  border-color: var(--accent);
+  color: var(--paper);
+}
+
+.panel__action:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.panel__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
+.panel__field--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-2);
+}
+
+.panel__failures {
+  margin: 0;
+  padding-left: var(--gap-4);
+  color: var(--behind);
+  font-family: var(--mono);
+  font-size: var(--step-1);
+}
+
+/* The one place in the app that can destroy learning, and it should not look like the others. */
+.panel--danger {
+  border-color: var(--behind-dim);
+}
+
+.panel__action--danger {
+  border-color: var(--behind-dim);
+  color: var(--behind);
+}
+
+.panel__action--danger:not(:disabled):hover {
+  border-color: var(--behind);
+  color: var(--paper);
+}
+
+/*
+ * The job, drawn in the rail's own language: a lit segment against unlit ground. The rail is the
+ * app's one visual idea, and a job's progress is the same idea turned on its side.
+ */
+.job {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  margin-top: var(--gap-4);
+  padding: var(--gap-3) var(--gap-4);
+  border: 1px solid var(--edge);
+  border-left: 2px solid var(--accent-dim);
+  border-radius: var(--radius);
+  background: var(--ink-800);
+}
+
+.job[data-state="done"] {
+  border-left-color: var(--ahead);
+}
+
+.job[data-state="failed"] {
+  border-left-color: var(--behind);
+}
+
+.job__kind {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mist-500);
+}
+
+.job__phase {
+  margin: 0;
+  font-size: var(--step-3);
+  color: var(--paper);
+}
+
+.job__bar {
+  width: min(32rem, 100%);
+  height: 2px;
+  background: var(--ink-700);
+}
+
+.job__fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width var(--motion) ease;
+}
+
+.job__count,
+.job__detail,
+.job__error {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: var(--step-1);
+  font-variant-numeric: tabular-nums;
+  color: var(--mist-400);
+}
+
+.job__error {
+  color: var(--behind);
+}
+
+/* Also the correction warnings: what is about to be deleted, in the colour of a debt. */
+.dialog__warning {
+  margin: 0;
+  max-width: 44ch;
+  color: var(--behind);
+  font-size: var(--step-2);
+}

@@ -1,0 +1,19 @@
+# Works learned one sicha per parsha week.
+#
+# Their unit IS the parsha, so they share the 54-parsha spine rather than carrying a structure of
+# their own. Likutei Sichot and The Midrash Says are not on Sefaria at all -- confirmed by walking
+# the full 6,604-book table of contents -- so they carry no ref and the UI shows position without a
+# deep link. That is a normal state, not a degradation.
+works:
+  - ref_title: Likutei Sichot
+    title_he: ליקוטי שיחות
+    source: local
+    sefaria_title: null
+  - ref_title: The Midrash Says
+    title_he: המדרש אומר
+    source: local
+    sefaria_title: null
+  - ref_title: Covenant and Conversation
+    title_he: ברית ושיחה
+    source: sefaria
+    sefaria_title: Covenant and Conversation Family Edition

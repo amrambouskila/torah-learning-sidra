@@ -1,0 +1,119 @@
+/*
+ * Dark, hairline construction. Structure is drawn in 1px rules and `--edge` borders; real shadows
+ * appear only on overlays. Adapted from the sibling TV app, whose rail is the idea carried over.
+ */
+:root {
+  color-scheme: dark;
+
+  --ink-950: #0a0c11;
+  --ink-900: #0f131a;
+  --ink-850: #131822;
+  --ink-800: #182029;
+  --ink-750: #1f2733;
+  --ink-700: #28313e;
+  --ink-650: #35404f;
+
+  --mist-500: #69768a;
+  --mist-400: #8994a8;
+  --mist-200: #c4cddc;
+  --paper: #eef2f8;
+
+  --edge: rgba(255, 255, 255, 0.07);
+  --edge-strong: rgba(255, 255, 255, 0.13);
+
+  /* One accent per fixed category, so a row's group is legible before you read its label. */
+  --daily: #d8a657;
+  --daily-dim: #4a3a1d;
+  --daily-soft: rgba(216, 166, 87, 0.14);
+
+  --shabbat: #8ab4ff;
+  --shabbat-dim: #2b3d5c;
+  --shabbat-soft: rgba(138, 180, 255, 0.14);
+
+  --chavrusa: #93c88f;
+  --chavrusa-dim: #2a3f28;
+  --chavrusa-soft: rgba(147, 200, 143, 0.14);
+
+  --accent: var(--shabbat);
+  --accent-dim: var(--shabbat-dim);
+  --accent-soft: var(--shabbat-soft);
+
+  --behind: #ff9b8a;
+  --behind-dim: #3f2320;
+  --ahead: #93c88f;
+  --inferred: #b79bd6;
+
+  /*
+   * Three faces, three jobs. David Libre is Ismar David's 1954 Hebrew, calligraphic and
+   * high-contrast; Spectral shares its contrast character on the Latin side; IBM Plex Mono
+   * carries every countable value with tabular figures.
+   */
+  --hebrew: "David Libre", "Frank Ruehl CLM", "Times New Roman", serif;
+  --latin: "Spectral", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --step-0: 0.6875rem;
+  --step-1: 0.75rem;
+  --step-2: 0.8125rem;
+  --step-3: 0.875rem;
+  --step-4: 1rem;
+  --step-5: 1.375rem;
+  --step-6: 2.25rem;
+
+  /*
+   * David Libre runs optically small: at a shared nominal size the Hebrew reads visibly
+   * undersized beside the Latin. Each Hebrew step is ~10% above its Latin counterpart. This is
+   * required rather than decorative -- a shared scale looks like a bug.
+   */
+  --he-step-0: 0.75rem;
+  --he-step-1: 0.8125rem;
+  --he-step-2: 0.875rem;
+  --he-step-3: 0.9375rem;
+  --he-step-4: 1.125rem;
+  --he-step-5: 1.5rem;
+  --he-step-6: 2.5rem;
+
+  /* David's thin strokes drop out at 400, so anything at row scale or below sets 500. */
+  --he-weight: 500;
+
+  --gap-1: 0.25rem;
+  --gap-2: 0.5rem;
+  --gap-3: 0.75rem;
+  --gap-4: 1rem;
+  --gap-5: 1.5rem;
+  --gap-6: 2.25rem;
+  --gap-7: 4rem;
+
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  --sidebar-width: 15rem;
+  --rail-width: 2.25rem;
+  --motion-fast: 140ms;
+  --motion: 220ms;
+}
+
+[data-category="daily"] {
+  --accent: var(--daily);
+  --accent-dim: var(--daily-dim);
+  --accent-soft: var(--daily-soft);
+}
+
+[data-category="shabbat"] {
+  --accent: var(--shabbat);
+  --accent-dim: var(--shabbat-dim);
+  --accent-soft: var(--shabbat-soft);
+}
+
+[data-category="chavrusa"] {
+  --accent: var(--chavrusa);
+  --accent-dim: var(--chavrusa-dim);
+  --accent-soft: var(--chavrusa-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion: 0ms;
+  }
+}

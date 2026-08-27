@@ -1,0 +1,70 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${SIDRA_POSTGRES_DB:-sidra}
+      POSTGRES_USER: ${SIDRA_POSTGRES_USER:-sidra}
+      POSTGRES_PASSWORD: ${SIDRA_POSTGRES_PASSWORD:-sidra_dev}
+    ports:
+      - "${SIDRA_POSTGRES_PORT:-5524}:5432"
+    volumes:
+      - sidra_postgres_data:/var/lib/postgresql/data
+      - ./backend/docker/init-test-db.sh:/docker-entrypoint-initdb.d/init-test-db.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${SIDRA_POSTGRES_USER:-sidra} -d ${SIDRA_POSTGRES_DB:-sidra}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      SIDRA_POSTGRES_HOST: postgres
+      SIDRA_POSTGRES_PORT: 5432
+      SIDRA_POSTGRES_DB: ${SIDRA_POSTGRES_DB:-sidra}
+      SIDRA_POSTGRES_USER: ${SIDRA_POSTGRES_USER:-sidra}
+      SIDRA_POSTGRES_PASSWORD: ${SIDRA_POSTGRES_PASSWORD:-sidra_dev}
+      SIDRA_API_PORT: 8285
+      SIDRA_CORS_ORIGINS: ${SIDRA_CORS_ORIGINS:-http://localhost:5285,http://127.0.0.1:5285}
+    ports:
+      - "${SIDRA_API_PORT:-8285}:8285"
+    volumes:
+      # A correction writes the ledger to disk before deleting anything. The image bakes this
+      # directory in, so without the mount that safety copy lands in the container's own
+      # filesystem and dies on the next [r] restart -- which is the one moment it is needed.
+      - ./backend/data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8285/health').status==200 else 1)\""]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${SIDRA_FRONTEND_PORT:-5285}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      # 127.0.0.1, not localhost: nginx listens on IPv4 only and localhost resolves to ::1
+      # first inside the container, so the probe gets a connection refused against a live server.
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  sidra_postgres_data:

@@ -1,0 +1,16 @@
+# The Shulchan Aruch in its traditional order.
+#
+# Sefaria's shape returns the chalakim alphabetically -- Choshen Mishpat first -- which would put
+# ordinal 1 of a one-siman-a-day cycle at CM 1 instead of Orach Chaim 1, where every such cycle
+# begins.
+#
+# The four chalakim and nothing else. Even HaEzer's two procedural appendices, Seder HaGet and
+# Seder Halitzah, are excluded in corpora.py: each is a single undivided node rather than a siman,
+# and counting them put the corpus at 1,707 against the measured 1,705.
+#
+# Titles are Sefaria's exact strings, because the override is matched against shape node titles.
+order:
+  - Shulchan Arukh, Orach Chayim
+  - Shulchan Arukh, Yoreh De'ah
+  - Shulchan Arukh, Even HaEzer
+  - Shulchan Arukh, Choshen Mishpat

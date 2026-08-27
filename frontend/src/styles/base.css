@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ink-950);
+  color: var(--mist-200);
+  font-family: var(--latin);
+  font-size: var(--step-3);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: var(--accent-dim);
+  text-underline-offset: 0.15em;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--paper);
+  background: var(--ink-850);
+  border: 1px solid var(--edge-strong);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.55rem;
+}
+
+/* Focus must be visible everywhere; this is the only outline rule in the app. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Hebrew is primary. Every Hebrew string is isolated so a Latin ref beside it cannot reorder it. */
+.he {
+  font-family: var(--hebrew);
+  font-weight: var(--he-weight);
+  direction: rtl;
+  unicode-bidi: isolate;
+  font-size: var(--he-step-3);
+  color: var(--paper);
+}
+
+.gloss {
+  font-family: var(--latin);
+  font-size: var(--step-2);
+  color: var(--mist-500);
+  font-style: italic;
+}
+
+/* Every countable value: ordinals, debts, percentages, dates. */
+.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mist-500);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  min-height: 100%;
+}
+
+.screen {
+  padding: var(--gap-6) var(--gap-6) var(--gap-7);
+  min-width: 0;
+}
+
+.screen__title {
+  font-size: var(--step-6);
+  color: var(--paper);
+  letter-spacing: -0.01em;
+}
+
+.screen__lede {
+  color: var(--mist-500);
+  margin: var(--gap-2) 0 var(--gap-5);
+  max-width: 62ch;
+}
+
+/* Wide content scrolls inside its own container; the page body never scrolls sideways. */
+.scroll-x {
+  overflow-x: auto;
+}
+
+/* Visible to a screen reader, not to the eye. The Stats grid's cells carry their value here. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

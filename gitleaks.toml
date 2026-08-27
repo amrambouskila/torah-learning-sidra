@@ -1,0 +1,22 @@
+# gitleaks configuration.
+#
+# The default ruleset, plus one allowlist for directories that are generated and never committed.
+# It matters because `--no-git` scans the filesystem rather than the index: in CI, on a fresh
+# clone, those directories do not exist and the scan is clean either way — but on a workstation
+# the virtualenv alone trips two hundred generic-api-key matches, and a check you cannot reproduce
+# locally is the one that surprises you on a Friday.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Generated directories, never committed"
+paths = [
+  '''(^|/)\.venv/''',
+  '''(^|/)node_modules/''',
+  '''(^|/)dist/''',
+  '''(^|/)coverage/''',
+  '''(^|/)\.uv-cache/''',
+  '''(^|/)\.pytest_cache/''',
+  '''(^|/)\.ruff_cache/''',
+]

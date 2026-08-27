@@ -1,0 +1,16 @@
+# Works learned in an annual cycle.
+#
+# At Simchat Torah the reading returns to Bereshit and begins again, so a track over one of these
+# never finishes: its schedule and its position keep counting past the end of the cycle and the
+# address starts over. Debt carries across the turn -- a cycle ending forgives nothing.
+#
+# Keyed by the catalog's own ref_title, because it is the WORK that repeats rather than the track.
+# Two tracks over Likutei Sichot would both repeat; a track's name is not the fact.
+#
+# One cycle bills exactly 378 aliyot across all 54 parshiyos, measured over a real crawled year
+# (2026-10-04 -> 2027-10-23) and pinned by a live test. The fold depends on that number.
+works:
+  - Parashat HaShavua
+  - Likutei Sichot
+  - The Midrash Says
+  - Covenant and Conversation

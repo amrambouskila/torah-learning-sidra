@@ -1,0 +1,16 @@
+# Aliyah ordinal names.
+#
+# Sefaria has no term for these: /api/terms/Shlishi and /api/terms/Rishon both 404, and
+# /api/terms/Aliyah is the sociological term (immigration), not the reading division. So they
+# are local.
+#
+# Seven, not eight. Maftir is a real eighth reading but appears only in /api/calendars
+# extraDetails.aliyot[7], never in the index alt-struct, so it is deferred past P1.
+aliyot:
+  - {ordinal: 1, en: Rishon,   he: ראשון}
+  - {ordinal: 2, en: Sheni,    he: שני}
+  - {ordinal: 3, en: Shlishi,  he: שלישי}
+  - {ordinal: 4, en: Revii,    he: רביעי}
+  - {ordinal: 5, en: Chamishi, he: חמישי}
+  - {ordinal: 6, en: Shishi,   he: ששי}
+  - {ordinal: 7, en: Shvii,    he: שביעי}

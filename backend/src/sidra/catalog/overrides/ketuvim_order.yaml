@@ -1,0 +1,19 @@
+# Ketuvim in the traditional printed order.
+#
+# Sefaria's own order places Ecclesiastes (Koheles) last, after Divrei HaYamim. The printed order
+# keeps it among the Five Megillos, between Eicha and Esther. Titles are Sefaria's exact strings,
+# because the override is matched against shape node titles.
+order:
+  - Psalms          # Tehilim
+  - Proverbs        # Mishlei
+  - Job             # Iyov
+  - Song of Songs   # Shir HaShirim
+  - Ruth            # Rus
+  - Lamentations    # Eicha
+  - Ecclesiastes    # Koheles
+  - Esther
+  - Daniel
+  - Ezra
+  - Nehemiah        # Nechemia
+  - I Chronicles    # Divrei HaYamim I
+  - II Chronicles   # Divrei HaYamim II

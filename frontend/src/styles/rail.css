@@ -1,0 +1,142 @@
+/*
+ * Two markers on one spine. The lit segment ends at the actual position; the ghost sits at the
+ * scheduled one. Everything between them is owed, and the eye reads that gap as the debt.
+ */
+.rail {
+  position: relative;
+  overflow-y: auto;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-lg);
+  background: var(--ink-900);
+}
+
+.rail__runway {
+  position: relative;
+}
+
+.rail__list {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+}
+
+.rail__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--rail-width) 3.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--gap-3);
+  padding-inline: var(--gap-3);
+  border-bottom: 1px solid var(--edge);
+}
+
+/* The continuous line, drawn behind the nodes. */
+.rail__row::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: calc(var(--gap-3) + var(--rail-width) / 2);
+  width: 1px;
+  transform: translateX(-50%);
+  background: var(--ink-700);
+}
+
+.rail__row[data-state="done"]::before,
+.rail__row[data-state="actual"]::before {
+  width: 2px;
+  background: var(--accent-dim);
+}
+
+/* Owed ground: drawn, but never lit. */
+.rail__row[data-state="between"]::before {
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--behind-dim) 0 4px,
+    transparent 4px 8px
+  );
+}
+
+.rail-node {
+  position: relative;
+  z-index: 1;
+  width: 0.85rem;
+  height: 0.85rem;
+  justify-self: center;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink-650);
+  background: var(--ink-950);
+  transition:
+    border-color var(--motion-fast) ease,
+    background var(--motion-fast) ease,
+    transform var(--motion-fast) ease;
+}
+
+.rail-node:hover {
+  transform: scale(1.2);
+  border-color: var(--accent);
+}
+
+.rail-node[data-state="done"] {
+  background: var(--accent-dim);
+  border-color: var(--accent-dim);
+}
+
+.rail-node[data-state="actual"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.rail-node[data-state="between"] {
+  border-color: var(--behind-dim);
+}
+
+/* The ghost: outlined, never filled, so it never reads as ground covered. */
+.rail-node[data-state="scheduled"] {
+  border-color: var(--behind);
+  border-style: dashed;
+  background: transparent;
+}
+
+.rail__ordinal {
+  font-size: var(--step-1);
+  color: var(--mist-500);
+}
+
+.rail__row[data-state="actual"] .rail__ordinal {
+  color: var(--paper);
+}
+
+/*
+ * An RTL span stretched across a grid column pushes its text to the far edge, which reads as a
+ * gap rather than as a label. Shrinking it to its content keeps the Hebrew beside its ordinal.
+ */
+.rail__he {
+  justify-self: start;
+  font-size: var(--he-step-2);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rail__error {
+  margin: var(--gap-4);
+  color: var(--behind);
+}
+
+.ref {
+  font-family: var(--mono);
+  font-size: var(--step-0);
+  color: var(--mist-500);
+  white-space: nowrap;
+}
+
+.ref--plain {
+  color: var(--ink-650);
+}

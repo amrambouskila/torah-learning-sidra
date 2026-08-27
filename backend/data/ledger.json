@@ -1,0 +1,5811 @@
+{
+  "advances": [
+    {
+      "from_ordinal": 0,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "09503965-add0-4a47-b0cf-4a79c7626c7c",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 1,
+      "track_id": "24778197-22b1-4ed2-b9bf-9e9282675a28",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 10,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "0c8f4ccc-f37d-49d8-be65-7d8c1d1b87b3",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 11,
+      "track_id": "4ef377e2-34da-4326-8100-8c6447f006fd",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 15,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "69ed3bd2-5113-44d7-a95b-f656ee1937b7",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 16,
+      "track_id": "20501833-f688-4409-b8a4-93c36113148c",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 22,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "9404214f-f969-4b3d-aa51-e9c370d1bd27",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 23,
+      "track_id": "943514b0-dec3-479f-a934-34b067d954f3",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 24,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "4471af1d-a923-4eb0-9865-7164f4c62ecb",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 25,
+      "track_id": "696270f9-24b2-4b79-9bb1-ddd90c2cf0ba",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 28,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "6629d6a5-1814-451b-a63e-ced1edfd13ed",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 29,
+      "track_id": "1a2b78fa-b49e-404d-b663-4a957925157a",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 53,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "4f5854a6-ee93-423f-96e7-d5836e2c1a6c",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 54,
+      "track_id": "7a8a4612-251d-49e6-a28f-cc0a92272b39",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 58,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "6fe12fa5-69f5-44f6-aa48-14795250f907",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 59,
+      "track_id": "012bb32b-da2a-4675-81b4-4e215c958927",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 75,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "da72bbcd-742e-41e2-b196-366ab1855f3c",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 76,
+      "track_id": "abcc5ff9-9ee8-47f4-8187-d6ad6cb24208",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 135,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "d3a7a348-9c36-4ff3-b5ae-3ed7545d56a9",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 136,
+      "track_id": "c2ddb6c9-1042-4f72-8249-5a295116f177",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 256,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "25163bcb-7560-4da2-a266-16755fc3c30e",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 257,
+      "track_id": "f2caa78e-d367-414c-b413-2aaeedde2dc5",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 282,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "2ed93834-dc70-43a8-89dc-b74957227da5",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 283,
+      "track_id": "dab27e1a-37df-4d4c-834f-9e2fb6634737",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 345,
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "id": "b2e015b6-aaea-4d26-a7f4-f85b7d34db6e",
+      "note": "Opening position, from the Obsidian sidra.",
+      "occurred_at": "2026-08-24T12:00:00Z",
+      "to_ordinal": 346,
+      "track_id": "4bc896fd-9244-4238-ae6b-d1ddcfe4d0e7",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 16,
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "id": "a23952c7-f771-45e5-aa40-661b4c92cfe4",
+      "note": null,
+      "occurred_at": "2026-08-25T12:00:00Z",
+      "to_ordinal": 18,
+      "track_id": "20501833-f688-4409-b8a4-93c36113148c",
+      "unit_count": 2
+    },
+    {
+      "from_ordinal": 76,
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "id": "6765ea85-a1ff-404f-b739-e7eb6851e05f",
+      "note": null,
+      "occurred_at": "2026-08-25T12:00:00Z",
+      "to_ordinal": 77,
+      "track_id": "abcc5ff9-9ee8-47f4-8187-d6ad6cb24208",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 257,
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "id": "8a267ad3-3da5-4acd-9fc1-22ea1440fe1e",
+      "note": null,
+      "occurred_at": "2026-08-25T12:00:00Z",
+      "to_ordinal": 261,
+      "track_id": "f2caa78e-d367-414c-b413-2aaeedde2dc5",
+      "unit_count": 4
+    },
+    {
+      "from_ordinal": 283,
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "id": "c6641836-f90e-42f4-9123-85a835205a5b",
+      "note": null,
+      "occurred_at": "2026-08-25T12:00:00Z",
+      "to_ordinal": 285,
+      "track_id": "dab27e1a-37df-4d4c-834f-9e2fb6634737",
+      "unit_count": 2
+    },
+    {
+      "from_ordinal": 285,
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "id": "acd240ab-6525-469b-9ca5-1bf72fcf7dfd",
+      "note": null,
+      "occurred_at": "2026-08-25T12:00:00Z",
+      "to_ordinal": 288,
+      "track_id": "dab27e1a-37df-4d4c-834f-9e2fb6634737",
+      "unit_count": 3
+    },
+    {
+      "from_ordinal": 346,
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "id": "9b4fb919-8075-4b79-8a50-c3ec7479100c",
+      "note": null,
+      "occurred_at": "2026-08-25T12:00:00Z",
+      "to_ordinal": 347,
+      "track_id": "4bc896fd-9244-4238-ae6b-d1ddcfe4d0e7",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 77,
+      "hebrew_date": "י״ג בֶּאֱלוּל תשפ״ו",
+      "id": "00846418-5a12-4c7b-bcac-56a33f94e984",
+      "note": null,
+      "occurred_at": "2026-08-26T12:00:00Z",
+      "to_ordinal": 78,
+      "track_id": "abcc5ff9-9ee8-47f4-8187-d6ad6cb24208",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 347,
+      "hebrew_date": "י״ג בֶּאֱלוּל תשפ״ו",
+      "id": "1b202f92-032a-4151-9d74-1a97d96c83ef",
+      "note": null,
+      "occurred_at": "2026-08-26T12:00:00Z",
+      "to_ordinal": 348,
+      "track_id": "4bc896fd-9244-4238-ae6b-d1ddcfe4d0e7",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 18,
+      "hebrew_date": "י״ד בֶּאֱלוּל תשפ״ו",
+      "id": "5da3fa48-e40e-4fe4-bd96-d2afdf405c4e",
+      "note": null,
+      "occurred_at": "2026-08-27T12:00:00Z",
+      "to_ordinal": 19,
+      "track_id": "20501833-f688-4409-b8a4-93c36113148c",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 78,
+      "hebrew_date": "י״ד בֶּאֱלוּל תשפ״ו",
+      "id": "abb58b1f-b57d-4038-924f-522c8fb2a0b5",
+      "note": null,
+      "occurred_at": "2026-08-27T12:00:00Z",
+      "to_ordinal": 79,
+      "track_id": "abcc5ff9-9ee8-47f4-8187-d6ad6cb24208",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 261,
+      "hebrew_date": "י״ד בֶּאֱלוּל תשפ״ו",
+      "id": "a36ba2ba-4e00-48e1-a5c3-83fc9abefc59",
+      "note": null,
+      "occurred_at": "2026-08-27T12:00:00Z",
+      "to_ordinal": 262,
+      "track_id": "f2caa78e-d367-414c-b413-2aaeedde2dc5",
+      "unit_count": 1
+    },
+    {
+      "from_ordinal": 348,
+      "hebrew_date": "י״ד בֶּאֱלוּל תשפ״ו",
+      "id": "6891e596-f7fa-47bb-a69c-4bb06eef7444",
+      "note": null,
+      "occurred_at": "2026-08-27T12:00:00Z",
+      "to_ordinal": 349,
+      "track_id": "4bc896fd-9244-4238-ae6b-d1ddcfe4d0e7",
+      "unit_count": 1
+    }
+  ],
+  "calendar": [
+    {
+      "civil_date": "2026-08-24",
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2026-08-25",
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2026-08-26",
+      "hebrew_date": "י״ג בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2026-08-27",
+      "hebrew_date": "י״ד בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2026-08-28",
+      "hebrew_date": "ט״ו בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2026-08-29",
+      "hebrew_date": "ט״ז בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2026-08-30",
+      "hebrew_date": "י״ז בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-08-31",
+      "hebrew_date": "י״ח בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-09-01",
+      "hebrew_date": "י״ט בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-09-02",
+      "hebrew_date": "כ׳ בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-09-03",
+      "hebrew_date": "כ״א בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-09-04",
+      "hebrew_date": "כ״ב בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-09-05",
+      "hebrew_date": "כ״ג בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2026-09-06",
+      "hebrew_date": "כ״ד בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-07",
+      "hebrew_date": "כ״ה בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-08",
+      "hebrew_date": "כ״ו בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-09",
+      "hebrew_date": "כ״ז בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-10",
+      "hebrew_date": "כ״ח בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-11",
+      "hebrew_date": "כ״ט בֶּאֱלוּל תשפ״ו",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-12",
+      "hebrew_date": "א׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-13",
+      "hebrew_date": "ב׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-14",
+      "hebrew_date": "ג׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-15",
+      "hebrew_date": "ד׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-16",
+      "hebrew_date": "ה׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-17",
+      "hebrew_date": "ו׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-18",
+      "hebrew_date": "ז׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-19",
+      "hebrew_date": "ח׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2026-09-20",
+      "hebrew_date": "ט׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-21",
+      "hebrew_date": "י׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-22",
+      "hebrew_date": "י״א בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-23",
+      "hebrew_date": "י״ב בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-24",
+      "hebrew_date": "י״ג בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-25",
+      "hebrew_date": "י״ד בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-26",
+      "hebrew_date": "ט״ו בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-27",
+      "hebrew_date": "ט״ז בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-28",
+      "hebrew_date": "י״ז בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-29",
+      "hebrew_date": "י״ח בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-09-30",
+      "hebrew_date": "י״ט בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-10-01",
+      "hebrew_date": "כ׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-10-02",
+      "hebrew_date": "כ״א בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-10-03",
+      "hebrew_date": "כ״ב בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2026-10-04",
+      "hebrew_date": "כ״ג בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-05",
+      "hebrew_date": "כ״ד בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-06",
+      "hebrew_date": "כ״ה בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-07",
+      "hebrew_date": "כ״ו בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-08",
+      "hebrew_date": "כ״ז בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-09",
+      "hebrew_date": "כ״ח בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-10",
+      "hebrew_date": "כ״ט בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2026-10-11",
+      "hebrew_date": "ל׳ בְּתִשְׁרֵי תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-12",
+      "hebrew_date": "א׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-13",
+      "hebrew_date": "ב׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-14",
+      "hebrew_date": "ג׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-15",
+      "hebrew_date": "ד׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-16",
+      "hebrew_date": "ה׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-17",
+      "hebrew_date": "ו׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2026-10-18",
+      "hebrew_date": "ז׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-19",
+      "hebrew_date": "ח׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-20",
+      "hebrew_date": "ט׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-21",
+      "hebrew_date": "י׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-22",
+      "hebrew_date": "י״א בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-23",
+      "hebrew_date": "י״ב בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-24",
+      "hebrew_date": "י״ג בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2026-10-25",
+      "hebrew_date": "י״ד בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-10-26",
+      "hebrew_date": "ט״ו בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-10-27",
+      "hebrew_date": "ט״ז בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-10-28",
+      "hebrew_date": "י״ז בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-10-29",
+      "hebrew_date": "י״ח בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-10-30",
+      "hebrew_date": "י״ט בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-10-31",
+      "hebrew_date": "כ׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-01",
+      "hebrew_date": "כ״א בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-02",
+      "hebrew_date": "כ״ב בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-03",
+      "hebrew_date": "כ״ג בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-04",
+      "hebrew_date": "כ״ד בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-05",
+      "hebrew_date": "כ״ה בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-06",
+      "hebrew_date": "כ״ו בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-07",
+      "hebrew_date": "כ״ז בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2026-11-08",
+      "hebrew_date": "כ״ח בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-09",
+      "hebrew_date": "כ״ט בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-10",
+      "hebrew_date": "ל׳ בְּחֶשְׁוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-11",
+      "hebrew_date": "א׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-12",
+      "hebrew_date": "ב׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-13",
+      "hebrew_date": "ג׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-14",
+      "hebrew_date": "ד׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2026-11-15",
+      "hebrew_date": "ה׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-16",
+      "hebrew_date": "ו׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-17",
+      "hebrew_date": "ז׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-18",
+      "hebrew_date": "ח׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-19",
+      "hebrew_date": "ט׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-20",
+      "hebrew_date": "י׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-21",
+      "hebrew_date": "י״א בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2026-11-22",
+      "hebrew_date": "י״ב בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-23",
+      "hebrew_date": "י״ג בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-24",
+      "hebrew_date": "י״ד בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-25",
+      "hebrew_date": "ט״ו בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-26",
+      "hebrew_date": "ט״ז בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-27",
+      "hebrew_date": "י״ז בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-28",
+      "hebrew_date": "י״ח בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2026-11-29",
+      "hebrew_date": "י״ט בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-11-30",
+      "hebrew_date": "כ׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-12-01",
+      "hebrew_date": "כ״א בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-12-02",
+      "hebrew_date": "כ״ב בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-12-03",
+      "hebrew_date": "כ״ג בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-12-04",
+      "hebrew_date": "כ״ד בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-12-05",
+      "hebrew_date": "כ״ה בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayeshev"
+      ],
+      "parsha_he": [
+        "וישב"
+      ]
+    },
+    {
+      "civil_date": "2026-12-06",
+      "hebrew_date": "כ״ו בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-07",
+      "hebrew_date": "כ״ז בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-08",
+      "hebrew_date": "כ״ח בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-09",
+      "hebrew_date": "כ״ט בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-10",
+      "hebrew_date": "ל׳ בְּכִסְלֵו תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-11",
+      "hebrew_date": "א׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-12",
+      "hebrew_date": "ב׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Miketz"
+      ],
+      "parsha_he": [
+        "מקץ"
+      ]
+    },
+    {
+      "civil_date": "2026-12-13",
+      "hebrew_date": "ג׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-14",
+      "hebrew_date": "ד׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-15",
+      "hebrew_date": "ה׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-16",
+      "hebrew_date": "ו׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-17",
+      "hebrew_date": "ז׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-18",
+      "hebrew_date": "ח׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-19",
+      "hebrew_date": "ט׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayigash"
+      ],
+      "parsha_he": [
+        "ויגש"
+      ]
+    },
+    {
+      "civil_date": "2026-12-20",
+      "hebrew_date": "י׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-21",
+      "hebrew_date": "י״א בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-22",
+      "hebrew_date": "י״ב בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-23",
+      "hebrew_date": "י״ג בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-24",
+      "hebrew_date": "י״ד בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-25",
+      "hebrew_date": "ט״ו בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-26",
+      "hebrew_date": "ט״ז בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayechi"
+      ],
+      "parsha_he": [
+        "ויחי"
+      ]
+    },
+    {
+      "civil_date": "2026-12-27",
+      "hebrew_date": "י״ז בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2026-12-28",
+      "hebrew_date": "י״ח בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2026-12-29",
+      "hebrew_date": "י״ט בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2026-12-30",
+      "hebrew_date": "כ׳ בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2026-12-31",
+      "hebrew_date": "כ״א בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2027-01-01",
+      "hebrew_date": "כ״ב בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2027-01-02",
+      "hebrew_date": "כ״ג בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shemot"
+      ],
+      "parsha_he": [
+        "שמות"
+      ]
+    },
+    {
+      "civil_date": "2027-01-03",
+      "hebrew_date": "כ״ד בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-04",
+      "hebrew_date": "כ״ה בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-05",
+      "hebrew_date": "כ״ו בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-06",
+      "hebrew_date": "כ״ז בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-07",
+      "hebrew_date": "כ״ח בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-08",
+      "hebrew_date": "כ״ט בְּטֵבֵת תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-09",
+      "hebrew_date": "א׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaera"
+      ],
+      "parsha_he": [
+        "וארא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-10",
+      "hebrew_date": "ב׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-11",
+      "hebrew_date": "ג׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-12",
+      "hebrew_date": "ד׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-13",
+      "hebrew_date": "ה׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-14",
+      "hebrew_date": "ו׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-15",
+      "hebrew_date": "ז׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-16",
+      "hebrew_date": "ח׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bo"
+      ],
+      "parsha_he": [
+        "בא"
+      ]
+    },
+    {
+      "civil_date": "2027-01-17",
+      "hebrew_date": "ט׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-18",
+      "hebrew_date": "י׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-19",
+      "hebrew_date": "י״א בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-20",
+      "hebrew_date": "י״ב בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-21",
+      "hebrew_date": "י״ג בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-22",
+      "hebrew_date": "י״ד בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-23",
+      "hebrew_date": "ט״ו בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beshalach"
+      ],
+      "parsha_he": [
+        "בשלח"
+      ]
+    },
+    {
+      "civil_date": "2027-01-24",
+      "hebrew_date": "ט״ז בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-25",
+      "hebrew_date": "י״ז בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-26",
+      "hebrew_date": "י״ח בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-27",
+      "hebrew_date": "י״ט בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-28",
+      "hebrew_date": "כ׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-29",
+      "hebrew_date": "כ״א בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-30",
+      "hebrew_date": "כ״ב בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Yitro"
+      ],
+      "parsha_he": [
+        "יתרו"
+      ]
+    },
+    {
+      "civil_date": "2027-01-31",
+      "hebrew_date": "כ״ג בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-01",
+      "hebrew_date": "כ״ד בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-02",
+      "hebrew_date": "כ״ה בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-03",
+      "hebrew_date": "כ״ו בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-04",
+      "hebrew_date": "כ״ז בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-05",
+      "hebrew_date": "כ״ח בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-06",
+      "hebrew_date": "כ״ט בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Mishpatim"
+      ],
+      "parsha_he": [
+        "משפטים"
+      ]
+    },
+    {
+      "civil_date": "2027-02-07",
+      "hebrew_date": "ל׳ בִּשְׁבָט תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-08",
+      "hebrew_date": "א׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-09",
+      "hebrew_date": "ב׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-10",
+      "hebrew_date": "ג׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-11",
+      "hebrew_date": "ד׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-12",
+      "hebrew_date": "ה׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-13",
+      "hebrew_date": "ו׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Terumah"
+      ],
+      "parsha_he": [
+        "תרומה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-14",
+      "hebrew_date": "ז׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-15",
+      "hebrew_date": "ח׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-16",
+      "hebrew_date": "ט׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-17",
+      "hebrew_date": "י׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-18",
+      "hebrew_date": "י״א בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-19",
+      "hebrew_date": "י״ב בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-20",
+      "hebrew_date": "י״ג בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tetzaveh"
+      ],
+      "parsha_he": [
+        "תצוה"
+      ]
+    },
+    {
+      "civil_date": "2027-02-21",
+      "hebrew_date": "י״ד בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-22",
+      "hebrew_date": "ט״ו בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-23",
+      "hebrew_date": "ט״ז בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-24",
+      "hebrew_date": "י״ז בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-25",
+      "hebrew_date": "י״ח בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-26",
+      "hebrew_date": "י״ט בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-27",
+      "hebrew_date": "כ׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tisa"
+      ],
+      "parsha_he": [
+        "כי תשא"
+      ]
+    },
+    {
+      "civil_date": "2027-02-28",
+      "hebrew_date": "כ״א בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-01",
+      "hebrew_date": "כ״ב בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-02",
+      "hebrew_date": "כ״ג בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-03",
+      "hebrew_date": "כ״ד בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-04",
+      "hebrew_date": "כ״ה בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-05",
+      "hebrew_date": "כ״ו בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-06",
+      "hebrew_date": "כ״ז בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayakhel"
+      ],
+      "parsha_he": [
+        "ויקהל"
+      ]
+    },
+    {
+      "civil_date": "2027-03-07",
+      "hebrew_date": "כ״ח בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-08",
+      "hebrew_date": "כ״ט בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-09",
+      "hebrew_date": "ל׳ בַּאֲדָר א׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-10",
+      "hebrew_date": "א׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-11",
+      "hebrew_date": "ב׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-12",
+      "hebrew_date": "ג׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-13",
+      "hebrew_date": "ד׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pekudei"
+      ],
+      "parsha_he": [
+        "פקודי"
+      ]
+    },
+    {
+      "civil_date": "2027-03-14",
+      "hebrew_date": "ה׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-15",
+      "hebrew_date": "ו׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-16",
+      "hebrew_date": "ז׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-17",
+      "hebrew_date": "ח׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-18",
+      "hebrew_date": "ט׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-19",
+      "hebrew_date": "י׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-20",
+      "hebrew_date": "י״א בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayikra"
+      ],
+      "parsha_he": [
+        "ויקרא"
+      ]
+    },
+    {
+      "civil_date": "2027-03-21",
+      "hebrew_date": "י״ב בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-22",
+      "hebrew_date": "י״ג בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-23",
+      "hebrew_date": "י״ד בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-24",
+      "hebrew_date": "ט״ו בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-25",
+      "hebrew_date": "ט״ז בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-26",
+      "hebrew_date": "י״ז בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-27",
+      "hebrew_date": "י״ח בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tzav"
+      ],
+      "parsha_he": [
+        "צו"
+      ]
+    },
+    {
+      "civil_date": "2027-03-28",
+      "hebrew_date": "י״ט בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-03-29",
+      "hebrew_date": "כ׳ בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-03-30",
+      "hebrew_date": "כ״א בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-03-31",
+      "hebrew_date": "כ״ב בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-04-01",
+      "hebrew_date": "כ״ג בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-04-02",
+      "hebrew_date": "כ״ד בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-04-03",
+      "hebrew_date": "כ״ה בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shmini"
+      ],
+      "parsha_he": [
+        "שמיני"
+      ]
+    },
+    {
+      "civil_date": "2027-04-04",
+      "hebrew_date": "כ״ו בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-05",
+      "hebrew_date": "כ״ז בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-06",
+      "hebrew_date": "כ״ח בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-07",
+      "hebrew_date": "כ״ט בַּאֲדָר ב׳ תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-08",
+      "hebrew_date": "א׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-09",
+      "hebrew_date": "ב׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-10",
+      "hebrew_date": "ג׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Tazria"
+      ],
+      "parsha_he": [
+        "תזריע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-11",
+      "hebrew_date": "ד׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-12",
+      "hebrew_date": "ה׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-13",
+      "hebrew_date": "ו׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-14",
+      "hebrew_date": "ז׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-15",
+      "hebrew_date": "ח׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-16",
+      "hebrew_date": "ט׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-17",
+      "hebrew_date": "י׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Metzora"
+      ],
+      "parsha_he": [
+        "מצורע"
+      ]
+    },
+    {
+      "civil_date": "2027-04-18",
+      "hebrew_date": "י״א בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-19",
+      "hebrew_date": "י״ב בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-20",
+      "hebrew_date": "י״ג בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-21",
+      "hebrew_date": "י״ד בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-22",
+      "hebrew_date": "ט״ו בְּנִיסָן תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-23",
+      "hebrew_date": "ט״ז בְּנִיסָן תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-24",
+      "hebrew_date": "י״ז בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-04-25",
+      "hebrew_date": "י״ח בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-04-26",
+      "hebrew_date": "י״ט בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-04-27",
+      "hebrew_date": "כ׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-04-28",
+      "hebrew_date": "כ״א בְּנִיסָן תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-04-29",
+      "hebrew_date": "כ״ב בְּנִיסָן תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-04-30",
+      "hebrew_date": "כ״ג בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-05-01",
+      "hebrew_date": "כ״ד בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Achrei Mot"
+      ],
+      "parsha_he": [
+        "אחרי מות"
+      ]
+    },
+    {
+      "civil_date": "2027-05-02",
+      "hebrew_date": "כ״ה בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-03",
+      "hebrew_date": "כ״ו בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-04",
+      "hebrew_date": "כ״ז בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-05",
+      "hebrew_date": "כ״ח בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-06",
+      "hebrew_date": "כ״ט בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-07",
+      "hebrew_date": "ל׳ בְּנִיסָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-08",
+      "hebrew_date": "א׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Kedoshim"
+      ],
+      "parsha_he": [
+        "קדושים"
+      ]
+    },
+    {
+      "civil_date": "2027-05-09",
+      "hebrew_date": "ב׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-10",
+      "hebrew_date": "ג׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-11",
+      "hebrew_date": "ד׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-12",
+      "hebrew_date": "ה׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-13",
+      "hebrew_date": "ו׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-14",
+      "hebrew_date": "ז׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-15",
+      "hebrew_date": "ח׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Emor"
+      ],
+      "parsha_he": [
+        "אמור"
+      ]
+    },
+    {
+      "civil_date": "2027-05-16",
+      "hebrew_date": "ט׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-17",
+      "hebrew_date": "י׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-18",
+      "hebrew_date": "י״א בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-19",
+      "hebrew_date": "י״ב בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-20",
+      "hebrew_date": "י״ג בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-21",
+      "hebrew_date": "י״ד בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-22",
+      "hebrew_date": "ט״ו בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Behar"
+      ],
+      "parsha_he": [
+        "בהר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-23",
+      "hebrew_date": "ט״ז בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-24",
+      "hebrew_date": "י״ז בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-25",
+      "hebrew_date": "י״ח בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-26",
+      "hebrew_date": "י״ט בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-27",
+      "hebrew_date": "כ׳ בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-28",
+      "hebrew_date": "כ״א בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-29",
+      "hebrew_date": "כ״ב בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bechukotai"
+      ],
+      "parsha_he": [
+        "בחוקתי"
+      ]
+    },
+    {
+      "civil_date": "2027-05-30",
+      "hebrew_date": "כ״ג בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-05-31",
+      "hebrew_date": "כ״ד בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-06-01",
+      "hebrew_date": "כ״ה בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-06-02",
+      "hebrew_date": "כ״ו בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-06-03",
+      "hebrew_date": "כ״ז בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-06-04",
+      "hebrew_date": "כ״ח בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-06-05",
+      "hebrew_date": "כ״ט בְּאִיָיר תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Bamidbar"
+      ],
+      "parsha_he": [
+        "במדבר"
+      ]
+    },
+    {
+      "civil_date": "2027-06-06",
+      "hebrew_date": "א׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-07",
+      "hebrew_date": "ב׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-08",
+      "hebrew_date": "ג׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-09",
+      "hebrew_date": "ד׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-10",
+      "hebrew_date": "ה׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-11",
+      "hebrew_date": "ו׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-12",
+      "hebrew_date": "ז׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-06-13",
+      "hebrew_date": "ח׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-14",
+      "hebrew_date": "ט׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-15",
+      "hebrew_date": "י׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-16",
+      "hebrew_date": "י״א בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-17",
+      "hebrew_date": "י״ב בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-18",
+      "hebrew_date": "י״ג בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-19",
+      "hebrew_date": "י״ד בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nasso"
+      ],
+      "parsha_he": [
+        "נשא"
+      ]
+    },
+    {
+      "civil_date": "2027-06-20",
+      "hebrew_date": "ט״ו בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-21",
+      "hebrew_date": "ט״ז בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-22",
+      "hebrew_date": "י״ז בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-23",
+      "hebrew_date": "י״ח בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-24",
+      "hebrew_date": "י״ט בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-25",
+      "hebrew_date": "כ׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-26",
+      "hebrew_date": "כ״א בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Beha'alotcha"
+      ],
+      "parsha_he": [
+        "בהעלותך"
+      ]
+    },
+    {
+      "civil_date": "2027-06-27",
+      "hebrew_date": "כ״ב בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-06-28",
+      "hebrew_date": "כ״ג בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-06-29",
+      "hebrew_date": "כ״ד בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-06-30",
+      "hebrew_date": "כ״ה בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-01",
+      "hebrew_date": "כ״ו בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-02",
+      "hebrew_date": "כ״ז בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-03",
+      "hebrew_date": "כ״ח בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Sh'lach"
+      ],
+      "parsha_he": [
+        "שלח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-04",
+      "hebrew_date": "כ״ט בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-05",
+      "hebrew_date": "ל׳ בְּסִיוָן תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-06",
+      "hebrew_date": "א׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-07",
+      "hebrew_date": "ב׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-08",
+      "hebrew_date": "ג׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-09",
+      "hebrew_date": "ד׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-10",
+      "hebrew_date": "ה׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Korach"
+      ],
+      "parsha_he": [
+        "קרח"
+      ]
+    },
+    {
+      "civil_date": "2027-07-11",
+      "hebrew_date": "ו׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-12",
+      "hebrew_date": "ז׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-13",
+      "hebrew_date": "ח׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-14",
+      "hebrew_date": "ט׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-15",
+      "hebrew_date": "י׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-16",
+      "hebrew_date": "י״א בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-17",
+      "hebrew_date": "י״ב בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chukat",
+        "Balak"
+      ],
+      "parsha_he": [
+        "חקת",
+        "בלק"
+      ]
+    },
+    {
+      "civil_date": "2027-07-18",
+      "hebrew_date": "י״ג בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-19",
+      "hebrew_date": "י״ד בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-20",
+      "hebrew_date": "ט״ו בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-21",
+      "hebrew_date": "ט״ז בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-22",
+      "hebrew_date": "י״ז בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-23",
+      "hebrew_date": "י״ח בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-24",
+      "hebrew_date": "י״ט בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Pinchas"
+      ],
+      "parsha_he": [
+        "פנחס"
+      ]
+    },
+    {
+      "civil_date": "2027-07-25",
+      "hebrew_date": "כ׳ בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-07-26",
+      "hebrew_date": "כ״א בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-07-27",
+      "hebrew_date": "כ״ב בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-07-28",
+      "hebrew_date": "כ״ג בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-07-29",
+      "hebrew_date": "כ״ד בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-07-30",
+      "hebrew_date": "כ״ה בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-07-31",
+      "hebrew_date": "כ״ו בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Matot",
+        "Masei"
+      ],
+      "parsha_he": [
+        "מטות",
+        "מסעי"
+      ]
+    },
+    {
+      "civil_date": "2027-08-01",
+      "hebrew_date": "כ״ז בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-02",
+      "hebrew_date": "כ״ח בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-03",
+      "hebrew_date": "כ״ט בְּתַמּוּז תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-04",
+      "hebrew_date": "א׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-05",
+      "hebrew_date": "ב׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-06",
+      "hebrew_date": "ג׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-07",
+      "hebrew_date": "ד׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Devarim"
+      ],
+      "parsha_he": [
+        "דברים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-08",
+      "hebrew_date": "ה׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-09",
+      "hebrew_date": "ו׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-10",
+      "hebrew_date": "ז׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-11",
+      "hebrew_date": "ח׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-12",
+      "hebrew_date": "ט׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-13",
+      "hebrew_date": "י׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-14",
+      "hebrew_date": "י״א בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vaetchanan"
+      ],
+      "parsha_he": [
+        "ואתחנן"
+      ]
+    },
+    {
+      "civil_date": "2027-08-15",
+      "hebrew_date": "י״ב בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-16",
+      "hebrew_date": "י״ג בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-17",
+      "hebrew_date": "י״ד בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-18",
+      "hebrew_date": "ט״ו בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-19",
+      "hebrew_date": "ט״ז בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-20",
+      "hebrew_date": "י״ז בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-21",
+      "hebrew_date": "י״ח בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Eikev"
+      ],
+      "parsha_he": [
+        "עקב"
+      ]
+    },
+    {
+      "civil_date": "2027-08-22",
+      "hebrew_date": "י״ט בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-23",
+      "hebrew_date": "כ׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-24",
+      "hebrew_date": "כ״א בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-25",
+      "hebrew_date": "כ״ב בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-26",
+      "hebrew_date": "כ״ג בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-27",
+      "hebrew_date": "כ״ד בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-28",
+      "hebrew_date": "כ״ה בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Re'eh"
+      ],
+      "parsha_he": [
+        "ראה"
+      ]
+    },
+    {
+      "civil_date": "2027-08-29",
+      "hebrew_date": "כ״ו בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-30",
+      "hebrew_date": "כ״ז בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-08-31",
+      "hebrew_date": "כ״ח בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-09-01",
+      "hebrew_date": "כ״ט בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-09-02",
+      "hebrew_date": "ל׳ בְּאָב תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-09-03",
+      "hebrew_date": "א׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-09-04",
+      "hebrew_date": "ב׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Shoftim"
+      ],
+      "parsha_he": [
+        "שופטים"
+      ]
+    },
+    {
+      "civil_date": "2027-09-05",
+      "hebrew_date": "ג׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-06",
+      "hebrew_date": "ד׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-07",
+      "hebrew_date": "ה׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-08",
+      "hebrew_date": "ו׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-09",
+      "hebrew_date": "ז׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-10",
+      "hebrew_date": "ח׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-11",
+      "hebrew_date": "ט׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Teitzei"
+      ],
+      "parsha_he": [
+        "כי תצא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-12",
+      "hebrew_date": "י׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-13",
+      "hebrew_date": "י״א בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-14",
+      "hebrew_date": "י״ב בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-15",
+      "hebrew_date": "י״ג בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-16",
+      "hebrew_date": "י״ד בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-17",
+      "hebrew_date": "ט״ו בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-18",
+      "hebrew_date": "ט״ז בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ki Tavo"
+      ],
+      "parsha_he": [
+        "כי תבוא"
+      ]
+    },
+    {
+      "civil_date": "2027-09-19",
+      "hebrew_date": "י״ז בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-20",
+      "hebrew_date": "י״ח בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-21",
+      "hebrew_date": "י״ט בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-22",
+      "hebrew_date": "כ׳ בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-23",
+      "hebrew_date": "כ״א בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-24",
+      "hebrew_date": "כ״ב בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-25",
+      "hebrew_date": "כ״ג בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Nitzavim",
+        "Vayeilech"
+      ],
+      "parsha_he": [
+        "נצבים",
+        "וילך"
+      ]
+    },
+    {
+      "civil_date": "2027-09-26",
+      "hebrew_date": "כ״ד בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-09-27",
+      "hebrew_date": "כ״ה בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-09-28",
+      "hebrew_date": "כ״ו בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-09-29",
+      "hebrew_date": "כ״ז בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-09-30",
+      "hebrew_date": "כ״ח בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-01",
+      "hebrew_date": "כ״ט בֶּאֱלוּל תשפ״ז",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-02",
+      "hebrew_date": "א׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-03",
+      "hebrew_date": "ב׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-04",
+      "hebrew_date": "ג׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-05",
+      "hebrew_date": "ד׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-06",
+      "hebrew_date": "ה׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-07",
+      "hebrew_date": "ו׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-08",
+      "hebrew_date": "ז׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-09",
+      "hebrew_date": "ח׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Ha'Azinu"
+      ],
+      "parsha_he": [
+        "האזינו"
+      ]
+    },
+    {
+      "civil_date": "2027-10-10",
+      "hebrew_date": "ט׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-11",
+      "hebrew_date": "י׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-12",
+      "hebrew_date": "י״א בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-13",
+      "hebrew_date": "י״ב בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-14",
+      "hebrew_date": "י״ג בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-15",
+      "hebrew_date": "י״ד בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-16",
+      "hebrew_date": "ט״ו בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-17",
+      "hebrew_date": "ט״ז בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-18",
+      "hebrew_date": "י״ז בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-19",
+      "hebrew_date": "י״ח בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-20",
+      "hebrew_date": "י״ט בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-21",
+      "hebrew_date": "כ׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-22",
+      "hebrew_date": "כ״א בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-23",
+      "hebrew_date": "כ״ב בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [],
+      "parsha_he": []
+    },
+    {
+      "civil_date": "2027-10-24",
+      "hebrew_date": "כ״ג בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": true,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-25",
+      "hebrew_date": "כ״ד בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-26",
+      "hebrew_date": "כ״ה בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-27",
+      "hebrew_date": "כ״ו בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-28",
+      "hebrew_date": "כ״ז בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-29",
+      "hebrew_date": "כ״ח בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-30",
+      "hebrew_date": "כ״ט בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "V'Zot HaBerachah",
+        "Bereshit"
+      ],
+      "parsha_he": [
+        "וזאת הברכה",
+        "בראשית"
+      ]
+    },
+    {
+      "civil_date": "2027-10-31",
+      "hebrew_date": "ל׳ בְּתִשְׁרֵי תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-01",
+      "hebrew_date": "א׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-02",
+      "hebrew_date": "ב׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-03",
+      "hebrew_date": "ג׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-04",
+      "hebrew_date": "ד׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-05",
+      "hebrew_date": "ה׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-06",
+      "hebrew_date": "ו׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Noach"
+      ],
+      "parsha_he": [
+        "נח"
+      ]
+    },
+    {
+      "civil_date": "2027-11-07",
+      "hebrew_date": "ז׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-08",
+      "hebrew_date": "ח׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-09",
+      "hebrew_date": "ט׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-10",
+      "hebrew_date": "י׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-11",
+      "hebrew_date": "י״א בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-12",
+      "hebrew_date": "י״ב בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-13",
+      "hebrew_date": "י״ג בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Lech Lecha"
+      ],
+      "parsha_he": [
+        "לך לך"
+      ]
+    },
+    {
+      "civil_date": "2027-11-14",
+      "hebrew_date": "י״ד בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-15",
+      "hebrew_date": "ט״ו בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-16",
+      "hebrew_date": "ט״ז בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-17",
+      "hebrew_date": "י״ז בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-18",
+      "hebrew_date": "י״ח בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-19",
+      "hebrew_date": "י״ט בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-20",
+      "hebrew_date": "כ׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayera"
+      ],
+      "parsha_he": [
+        "וירא"
+      ]
+    },
+    {
+      "civil_date": "2027-11-21",
+      "hebrew_date": "כ״א בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-22",
+      "hebrew_date": "כ״ב בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-23",
+      "hebrew_date": "כ״ג בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-24",
+      "hebrew_date": "כ״ד בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-25",
+      "hebrew_date": "כ״ה בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-26",
+      "hebrew_date": "כ״ו בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-27",
+      "hebrew_date": "כ״ז בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Chayei Sara"
+      ],
+      "parsha_he": [
+        "חיי שרה"
+      ]
+    },
+    {
+      "civil_date": "2027-11-28",
+      "hebrew_date": "כ״ח בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-11-29",
+      "hebrew_date": "כ״ט בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-11-30",
+      "hebrew_date": "ל׳ בְּחֶשְׁוָן תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-12-01",
+      "hebrew_date": "א׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-12-02",
+      "hebrew_date": "ב׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-12-03",
+      "hebrew_date": "ג׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-12-04",
+      "hebrew_date": "ד׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Toldot"
+      ],
+      "parsha_he": [
+        "תולדות"
+      ]
+    },
+    {
+      "civil_date": "2027-12-05",
+      "hebrew_date": "ה׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-06",
+      "hebrew_date": "ו׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-07",
+      "hebrew_date": "ז׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-08",
+      "hebrew_date": "ח׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-09",
+      "hebrew_date": "ט׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-10",
+      "hebrew_date": "י׳ בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-11",
+      "hebrew_date": "י״א בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayetzei"
+      ],
+      "parsha_he": [
+        "ויצא"
+      ]
+    },
+    {
+      "civil_date": "2027-12-12",
+      "hebrew_date": "י״ב בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2027-12-13",
+      "hebrew_date": "י״ג בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2027-12-14",
+      "hebrew_date": "י״ד בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2027-12-15",
+      "hebrew_date": "ט״ו בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    },
+    {
+      "civil_date": "2027-12-16",
+      "hebrew_date": "ט״ז בְּכִסְלֵו תשפ״ח",
+      "is_yom_tov": false,
+      "parsha_en": [
+        "Vayishlach"
+      ],
+      "parsha_he": [
+        "וישלח"
+      ]
+    }
+  ],
+  "chavrusas": [
+    {
+      "id": "6bd91e14-af20-4d89-b605-8537aa3a38c4",
+      "name": "David Cohen",
+      "notes": null
+    },
+    {
+      "id": "d2748cbc-c4d5-45d3-82ed-6f6516bd7c60",
+      "name": "David Hadar",
+      "notes": null
+    },
+    {
+      "id": "c9bf3267-103c-401d-9df3-b20fdb607055",
+      "name": "Nesher",
+      "notes": null
+    },
+    {
+      "id": "8f692e8c-5935-4d81-95db-8fc1d5d17722",
+      "name": "Rabbi Jacob",
+      "notes": null
+    },
+    {
+      "id": "4eee29a8-445f-4889-99e2-2ff4952a43d9",
+      "name": "Yosef Mendelson & David Gofman",
+      "notes": null
+    }
+  ],
+  "exported_at": "2026-08-27T17:53:06.714099Z",
+  "format_version": 1,
+  "tags": [
+    {
+      "color": null,
+      "id": "7095541a-97d1-4e5b-bf59-b4826e95e2cc",
+      "name": "Halacha",
+      "name_he": "הלכה"
+    },
+    {
+      "color": null,
+      "id": "40ce1255-2fb3-4837-8af2-044e356ffe42",
+      "name": "Midrash",
+      "name_he": "מדרש"
+    },
+    {
+      "color": null,
+      "id": "4a1bcf60-2f7d-497c-8bef-25d24c86a178",
+      "name": "Oral Torah",
+      "name_he": "תורה שבעל פה"
+    },
+    {
+      "color": "#8a6d3b",
+      "id": "c9919292-98da-4bd0-8dc7-7d2e85d1fa2e",
+      "name": "Parsha",
+      "name_he": "פרשה"
+    },
+    {
+      "color": null,
+      "id": "759d6a9e-f00e-49e4-869a-08147c87f7e8",
+      "name": "Written Torah",
+      "name_he": "תורה שבכתב"
+    }
+  ],
+  "tracks": [
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 59,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "012bb32b-da2a-4675-81b4-4e215c958927",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Chovot HaLevavot",
+      "name_he": "חובות הלבבות",
+      "period": "week",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": "Duties of the Heart"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 346,
+      "category": "daily",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "4bc896fd-9244-4238-ae6b-d1ddcfe4d0e7",
+      "is_active": true,
+      "kind": "parsha_aliyah",
+      "name_en": "Chumash",
+      "name_he": "חומש",
+      "period": "day",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [
+        "c9919292-98da-4bd0-8dc7-7d2e85d1fa2e"
+      ],
+      "work_ref_title": "Parashat HaShavua"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "767aae12-3b4f-49a4-9442-35830168fc92",
+      "is_active": true,
+      "kind": "parsha_weekly",
+      "name_en": "Covenant and Conversation",
+      "name_he": "ברית ושיחה",
+      "period": "week",
+      "rate": 1,
+      "starts_on": "2026-10-10",
+      "tag_ids": [
+        "c9919292-98da-4bd0-8dc7-7d2e85d1fa2e"
+      ],
+      "work_ref_title": "Covenant and Conversation"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 136,
+      "category": "chavrusa",
+      "chavrusa_id": "6bd91e14-af20-4d89-b605-8537aa3a38c4",
+      "corpus_id": "mishneh_torah",
+      "id": "c2ddb6c9-1042-4f72-8249-5a295116f177",
+      "is_active": true,
+      "kind": "corpus",
+      "name_en": "David Cohen — Mishneh Torah",
+      "name_he": "דוד כהן — משנה תורה",
+      "period": "none",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": null
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 23,
+      "category": "chavrusa",
+      "chavrusa_id": "d2748cbc-c4d5-45d3-82ed-6f6516bd7c60",
+      "corpus_id": null,
+      "id": "943514b0-dec3-479f-a934-34b067d954f3",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "David Hadar — Brachot",
+      "name_he": "דוד הדר — ברכות",
+      "period": "none",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": "Berakhot"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 74,
+      "category": "daily",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "7a8a4612-251d-49e6-a28f-cc0a92272b39",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Gemara",
+      "name_he": "גמרא",
+      "period": "day",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [
+        "4a1bcf60-2f7d-497c-8bef-25d24c86a178"
+      ],
+      "work_ref_title": "Avodah Zarah"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 16,
+      "category": "daily",
+      "chavrusa_id": null,
+      "corpus_id": "ketuvim",
+      "id": "20501833-f688-4409-b8a4-93c36113148c",
+      "is_active": true,
+      "kind": "corpus",
+      "name_en": "Ketuvim",
+      "name_he": "כתובים",
+      "period": "day",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": null
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "3b004619-5ba0-4f58-b22e-7e4be3ba1c03",
+      "is_active": true,
+      "kind": "parsha_weekly",
+      "name_en": "Likutei Sichot",
+      "name_he": "ליקוטי שיחות",
+      "period": "week",
+      "rate": 1,
+      "starts_on": "2026-10-10",
+      "tag_ids": [
+        "c9919292-98da-4bd0-8dc7-7d2e85d1fa2e"
+      ],
+      "work_ref_title": "Likutei Sichot"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "24778197-22b1-4ed2-b9bf-9e9282675a28",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Likutey Moharan",
+      "name_he": "ליקוטי מוהר״ן",
+      "period": "week",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": "Likutei Moharan"
+    },
+    {
+      "anchor_date": "2026-09-05",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "f423c3ef-5095-4e60-bdfd-355e8d4d253d",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Mesilat Yesharim",
+      "name_he": "מסילת ישרים",
+      "period": "week",
+      "rate": 1,
+      "starts_on": "2026-09-05",
+      "tag_ids": [],
+      "work_ref_title": "Mesillat Yesharim"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 76,
+      "category": "daily",
+      "chavrusa_id": null,
+      "corpus_id": "mishnah",
+      "id": "abcc5ff9-9ee8-47f4-8187-d6ad6cb24208",
+      "is_active": true,
+      "kind": "corpus",
+      "name_en": "Mishna",
+      "name_he": "משנה",
+      "period": "day",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": null
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 29,
+      "category": "chavrusa",
+      "chavrusa_id": "c9bf3267-103c-401d-9df3-b20fdb607055",
+      "corpus_id": null,
+      "id": "1a2b78fa-b49e-404d-b663-4a957925157a",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Nesher — Shaarei Teshuva",
+      "name_he": "נשר — שערי תשובה",
+      "period": "none",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": "Sha'arei Teshuvah"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 259,
+      "category": "daily",
+      "chavrusa_id": null,
+      "corpus_id": "neviim",
+      "id": "f2caa78e-d367-414c-b413-2aaeedde2dc5",
+      "is_active": true,
+      "kind": "corpus",
+      "name_en": "Neviim",
+      "name_he": "נביאים",
+      "period": "day",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [
+        "759d6a9e-f00e-49e4-869a-08147c87f7e8"
+      ],
+      "work_ref_title": null
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 11,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "4ef377e2-34da-4326-8100-8c6447f006fd",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Orchot Tzadikim",
+      "name_he": "ארחות צדיקים",
+      "period": "week",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": "Orchot Tzadikim"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 283,
+      "category": "chavrusa",
+      "chavrusa_id": "8f692e8c-5935-4d81-95db-8fc1d5d17722",
+      "corpus_id": "mishneh_torah",
+      "id": "dab27e1a-37df-4d4c-834f-9e2fb6634737",
+      "is_active": true,
+      "kind": "corpus",
+      "name_en": "Rabbi Jacob — Mishneh Torah",
+      "name_he": "הרב יעקב — משנה תורה",
+      "period": "none",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": null
+    },
+    {
+      "anchor_date": "2026-09-05",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "b7a4b99d-c273-4234-a15b-4a2af42f53af",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Shmirat HaLashon",
+      "name_he": "שמירת הלשון",
+      "period": "week",
+      "rate": 1,
+      "starts_on": "2026-09-05",
+      "tag_ids": [],
+      "work_ref_title": "Shemirat HaLashon"
+    },
+    {
+      "anchor_date": "2026-09-08",
+      "anchor_ordinal": 1,
+      "category": "daily",
+      "chavrusa_id": null,
+      "corpus_id": "shulchan_aruch",
+      "id": "dff52704-f425-4abe-a864-83f7267eb956",
+      "is_active": true,
+      "kind": "corpus",
+      "name_en": "Shulchan Aruch",
+      "name_he": "שולחן ערוך",
+      "period": "day",
+      "rate": 1,
+      "starts_on": "2026-09-08",
+      "tag_ids": [],
+      "work_ref_title": null
+    },
+    {
+      "anchor_date": "2026-09-05",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "38180510-c33f-438d-9506-05985cc9e8f0",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Tanya",
+      "name_he": "תניא",
+      "period": "week",
+      "rate": 1,
+      "starts_on": "2026-09-05",
+      "tag_ids": [],
+      "work_ref_title": "Tanya, Part I; Likkutei Amarim"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 1,
+      "category": "shabbat",
+      "chavrusa_id": null,
+      "corpus_id": null,
+      "id": "ea8cfd99-f97d-456e-92c6-e88b03b1ed05",
+      "is_active": true,
+      "kind": "parsha_weekly",
+      "name_en": "The Midrash Says",
+      "name_he": "המדרש אומר",
+      "period": "week",
+      "rate": 1,
+      "starts_on": "2026-10-10",
+      "tag_ids": [
+        "c9919292-98da-4bd0-8dc7-7d2e85d1fa2e"
+      ],
+      "work_ref_title": "The Midrash Says"
+    },
+    {
+      "anchor_date": "2026-08-24",
+      "anchor_ordinal": 25,
+      "category": "chavrusa",
+      "chavrusa_id": "4eee29a8-445f-4889-99e2-2ff4952a43d9",
+      "corpus_id": null,
+      "id": "696270f9-24b2-4b79-9bb1-ddd90c2cf0ba",
+      "is_active": true,
+      "kind": "curated_queue",
+      "name_en": "Yosef Mendelson & David Gofman — Bereishit Rabbah",
+      "name_he": "יוסף מנדלסון ודוד גופמן — בראשית רבה",
+      "period": "none",
+      "rate": 1,
+      "starts_on": null,
+      "tag_ids": [],
+      "work_ref_title": "Bereshit Rabbah"
+    }
+  ]
+}

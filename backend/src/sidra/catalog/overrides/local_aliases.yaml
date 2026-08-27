@@ -1,0 +1,20 @@
+# Amram's own spellings, mapped onto Sefaria's canonical ref_title.
+#
+# Sefaria's English titles for Mishneh Torah are translations, not transliterations: "Hilchos Daos"
+# is "Mishneh Torah, Human Dispositions". Without this layer a search for what he actually writes
+# finds nothing.
+aliases:
+  Mesechet Avoda Zara: Avodah Zarah
+  Avoda Zara: Avodah Zarah
+  Brachot: Berakhot
+  Tehilim: Psalms
+  Yirmiyahu: Jeremiah
+  Hilchos Avoda Zara: Mishneh Torah, Foreign Worship and Customs of the Nations
+  Hilchos Daos: Mishneh Torah, Human Dispositions
+  Chovot Halevavot: Duties of the Heart
+  Shaarei Teshuva: Sha'arei Teshuvah
+  Orchos Tzaddikim: Orchot Tzadikim
+  Mesilat Yesharim: Mesillat Yesharim
+  Shmirat Halashon: Shemirat HaLashon
+  Likutey Moharan: Likutei Moharan
+  Mishna Shabbat: Mishnah Shabbat

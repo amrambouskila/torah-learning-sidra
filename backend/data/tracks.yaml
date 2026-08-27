@@ -1,0 +1,223 @@
+# Amram's sidra: the twenty tracks the app opens with.
+#
+# Two positions per track, and the distinction is the whole point of the ledger:
+#
+#   scheduled  where the rate says he should be on `as_of`   -> becomes the anchor
+#   current    where he actually is                          -> becomes the opening advance
+#
+# The gap between them is the debt. Avoda Zara 28b against a scheduled 38b is twenty amudim owed;
+# Yirmiyahu 44 against a scheduled 47 is three perakim. Both were measured from the Obsidian note
+# on 2026-08-24 and are the acceptance criteria for P2.
+#
+# A track with no `current` has not been opened: it owes its first unit and nothing has been
+# learned yet. A track with no `scheduled` starts today at its `current` position, square.
+#
+# Positions are written the way Amram writes them. Derived works answer to a Sefaria ref; the
+# Chumash answers to a parsha and an aliyah number, because that is what a parsha-aliyah position
+# is. Neither is an ordinal: ordinals are resolved from the catalog at seed time, so a typo fails
+# the seed instead of silently placing a track in the wrong masechta.
+
+as_of: 2026-08-24
+
+tags:
+  - name: parsha
+    name_he: פרשה
+    color: "#8a6d3b"
+
+chavrusas:
+  - name: Rabbi Jacob
+  - name: David Cohen
+  - name: David Hadar
+  - name: Yosef Mendelson & David Gofman
+  - name: Nesher
+
+tracks:
+  # --- Daily, one unit a day -------------------------------------------------------------
+  - name_en: Chumash
+    name_he: חומש
+    category: daily
+    kind: parsha_aliyah
+    work_ref_title: Parashat HaShavua
+    rate: 1
+    period: day
+    current_aliyah: {parsha: Ki Tavo, aliyah: 3}
+    tags: [parsha]
+
+  - name_en: Neviim
+    name_he: נביאים
+    category: daily
+    kind: corpus
+    corpus_id: neviim
+    rate: 1
+    period: day
+    scheduled_ref: Jeremiah 47
+    current_ref: Jeremiah 44
+
+  - name_en: Ketuvim
+    name_he: כתובים
+    category: daily
+    kind: corpus
+    corpus_id: ketuvim
+    rate: 1
+    period: day
+    current_ref: Psalms 16
+
+  - name_en: Mishna
+    name_he: משנה
+    category: daily
+    kind: corpus
+    corpus_id: mishnah
+    rate: 1
+    period: day
+    current_ref: Mishnah Shabbat 1
+
+  - name_en: Gemara
+    name_he: גמרא
+    category: daily
+    kind: curated_queue
+    work_ref_title: Avodah Zarah
+    rate: 1
+    period: day
+    scheduled_ref: Avodah Zarah 38b
+    current_ref: Avodah Zarah 28b
+
+  - name_en: Shulchan Aruch
+    name_he: שולחן ערוך
+    category: daily
+    kind: corpus
+    corpus_id: shulchan_aruch
+    rate: 1
+    period: day
+
+  # --- Shabbat, one unit a week ----------------------------------------------------------
+  - name_en: Chovot HaLevavot
+    name_he: חובות הלבבות
+    category: shabbat
+    kind: curated_queue
+    work_ref_title: Duties of the Heart
+    rate: 1
+    period: week
+    current_ref: "Duties of the Heart, Seventh Treatise on Repentance 2"
+
+  - name_en: Orchot Tzadikim
+    name_he: ארחות צדיקים
+    category: shabbat
+    kind: curated_queue
+    work_ref_title: Orchot Tzadikim
+    rate: 1
+    period: week
+    current_ref: Orchot Tzadikim 11
+
+  - name_en: Mesilat Yesharim
+    name_he: מסילת ישרים
+    category: shabbat
+    kind: curated_queue
+    work_ref_title: Mesillat Yesharim
+    rate: 1
+    period: week
+
+  - name_en: Shmirat HaLashon
+    name_he: שמירת הלשון
+    category: shabbat
+    kind: curated_queue
+    work_ref_title: Shemirat HaLashon
+    rate: 1
+    period: week
+
+  - name_en: Likutey Moharan
+    name_he: ליקוטי מוהר״ן
+    category: shabbat
+    kind: curated_queue
+    work_ref_title: Likutei Moharan
+    rate: 1
+    period: week
+    current_ref: "Likutei Moharan 1:1"
+
+  - name_en: Tanya
+    name_he: תניא
+    category: shabbat
+    kind: curated_queue
+    # Sefaria's title carries a literal semicolon; it is part of the string, not a delimiter.
+    work_ref_title: "Tanya, Part I; Likkutei Amarim"
+    rate: 1
+    period: week
+
+  # The three parsha-weekly works all begin at Shabbos Bereishis, 2026-10-10. Until then they
+  # display "starts in N weeks" and accrue nothing.
+  - name_en: Likutei Sichot
+    name_he: ליקוטי שיחות
+    category: shabbat
+    kind: parsha_weekly
+    work_ref_title: Likutei Sichot
+    rate: 1
+    period: week
+    starts_on: 2026-10-10
+    tags: [parsha]
+
+  - name_en: The Midrash Says
+    name_he: המדרש אומר
+    category: shabbat
+    kind: parsha_weekly
+    work_ref_title: The Midrash Says
+    rate: 1
+    period: week
+    starts_on: 2026-10-10
+    tags: [parsha]
+
+  - name_en: Covenant and Conversation
+    name_he: ברית ושיחה
+    category: shabbat
+    kind: parsha_weekly
+    work_ref_title: Covenant and Conversation
+    rate: 1
+    period: week
+    starts_on: 2026-10-10
+    tags: [parsha]
+
+  # --- Chavrusa, no rate: staleness only -------------------------------------------------
+  # Both Mishneh Torah tracks run the Rambam's own order and are independent of each other:
+  # Rabbi Jacob is in Avoda Zara (Sefer Madda #4) while David Cohen is in Deos (#2).
+  - name_en: Rabbi Jacob — Mishneh Torah
+    name_he: הרב יעקב — משנה תורה
+    category: chavrusa
+    kind: corpus
+    corpus_id: mishneh_torah
+    period: none
+    chavrusa: Rabbi Jacob
+    current_ref: "Mishneh Torah, Foreign Worship and Customs of the Nations 5:2"
+
+  - name_en: David Cohen — Mishneh Torah
+    name_he: דוד כהן — משנה תורה
+    category: chavrusa
+    kind: corpus
+    corpus_id: mishneh_torah
+    period: none
+    chavrusa: David Cohen
+    current_ref: "Mishneh Torah, Human Dispositions 5:8"
+
+  - name_en: David Hadar — Brachot
+    name_he: דוד הדר — ברכות
+    category: chavrusa
+    kind: curated_queue
+    work_ref_title: Berakhot
+    period: none
+    chavrusa: David Hadar
+    current_ref: Berakhot 13a
+
+  - name_en: Yosef Mendelson & David Gofman — Bereishit Rabbah
+    name_he: יוסף מנדלסון ודוד גופמן — בראשית רבה
+    category: chavrusa
+    kind: curated_queue
+    work_ref_title: Bereshit Rabbah
+    period: none
+    chavrusa: Yosef Mendelson & David Gofman
+    current_ref: "Bereshit Rabbah 3:5"
+
+  - name_en: Nesher — Shaarei Teshuva
+    name_he: נשר — שערי תשובה
+    category: chavrusa
+    kind: curated_queue
+    work_ref_title: "Sha'arei Teshuvah"
+    period: none
+    chavrusa: Nesher
+    current_ref: "Sha'arei Teshuvah 1:29"

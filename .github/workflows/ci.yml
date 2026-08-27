@@ -1,0 +1,487 @@
+# Torah Learning Sidra — CI
+#
+# The GitHub form of `.gitlab-ci.yml`. GitHub has no stages, so the six of them are reproduced with
+# `needs:`: lint gates sast, sast gates test, and so on down to docker-build. That ordering is the
+# point — a failing ruff run should not spend four minutes building images.
+#
+# live-marked tests are excluded everywhere: they hit the real Sefaria API and stream ~656 MB of
+# link export. They are the guard against a fixture that encodes the same wrong belief as the code
+# reading it, and they are run deliberately, on a workstation, not on every push.
+
+name: CI
+
+# GitLab runs on every push to every branch. This runs on main and on pull requests instead: a
+# branch you are still pushing to is answered by the PR run, and running both doubles the bill for
+# the same commit.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# A second push supersedes the first; nothing is learned by finishing the older run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  PYTHON_VERSION: "3.13"
+  NODE_VERSION: "22"
+
+jobs:
+  # ---------------------------------------------------------------- lint
+
+  ruff:
+    name: ruff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Install
+        working-directory: backend
+        run: uv sync --all-groups --frozen
+      - name: Lint
+        working-directory: backend
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+
+  eslint:
+    name: eslint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # pnpm is pinned by packageManager in package.json, so the version cannot drift under CI.
+      - uses: pnpm/action-setup@v4
+        with:
+          # The pin lives in frontend/package.json; there is no manifest at the repository root,
+          # and without this the action has nothing to read a version from and fails outright.
+          package_json_file: frontend/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - name: Install
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+      # security/detect-* and no-unsanitized are warnings by default; --max-warnings 0 makes them gate.
+      - name: Lint
+        working-directory: frontend
+        run: pnpm lint
+
+  # ---------------------------------------------------------------- sast
+
+  codeql:
+    name: codeql (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    needs: [ruff, eslint]
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [python, javascript-typescript]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+      - uses: github/codeql-action/autobuild@v3
+      - uses: github/codeql-action/analyze@v3
+        with:
+          category: /language:${{ matrix.language }}
+
+  semgrep:
+    name: semgrep
+    runs-on: ubuntu-latest
+    needs: [ruff, eslint]
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      # Run through uvx rather than the semgrep container: a container job needs the runner's own
+      # glibc node mounted in to execute JavaScript actions, and the semgrep image is musl.
+      #
+      # Explicit rulesets, not `--config auto`: auto refuses to run with metrics off, and the set
+      # it fetches is not pinned, so two runs a month apart can gate differently.
+      #
+      # `semgrep scan`, not `semgrep ci`: the ci subcommand rejects --severity and --error and
+      # exits 2 with a usage error.
+      # Three rules are excluded rather than suppressed inline: all three match a whole file rather
+      # than a line, so a nosemgrep comment has no match to attach to and silently does nothing.
+      # Each carries its reason here and again beside the code it is about.
+      # missing-user: both images run as root deliberately; the reason is written above the CMD in each Dockerfile
+      # request-host-used: nothing behind the proxy reads the Host header; the reason is written above the directive
+      # github-actions-mutable-action-tag: every action here is published by GitHub itself or by
+      #   the tool's own vendor, and each is tracked at a major tag. Pinning commit SHAs by hand,
+      #   with nothing watching them, trades a supply-chain risk for a staleness one -- a pinned
+      #   and forgotten SHA never receives the action's own security fixes.
+      - name: Semgrep
+        run: >
+          uvx semgrep scan --metrics=off --config p/default --config p/owasp-top-ten --config p/python --config p/typescript --config p/react --config p/docker
+          --exclude node_modules --exclude .venv --exclude dist --exclude coverage
+          --exclude-rule dockerfile.security.missing-user.missing-user
+          --exclude-rule generic.nginx.security.request-host-used.request-host-used
+          --exclude-rule yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag
+          --sarif --output semgrep.sarif
+      # Everything found goes to the Security tab, whatever its severity.
+      - name: Upload SARIF
+        if: ${{ !cancelled() }}
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: semgrep.sarif
+          category: semgrep
+      # But only ERROR fails the run. Anything below is surfaced above and triaged, which is the
+      # rule: a suppression carries a written reason, and an unsuppressed warning stays visible.
+      - name: Fail on error-level findings
+        run: |
+          python - <<'EOF'
+          import json, sys
+          runs = json.load(open("semgrep.sarif", encoding="utf-8"))["runs"]
+          rules = {r["id"]: r for run in runs for r in run["tool"]["driver"].get("rules", [])}
+          errors = [
+              res
+              for run in runs
+              for res in run.get("results", [])
+              if rules.get(res.get("ruleId"), {}).get("defaultConfiguration", {}).get("level") == "error"
+              or res.get("level") == "error"
+          ]
+          for res in errors:
+              loc = res["locations"][0]["physicalLocation"]
+              print(f"ERROR {res.get('ruleId')} {loc['artifactLocation']['uri']}:{loc['region']['startLine']}")
+          print(f"{len(errors)} error-level findings")
+          sys.exit(1 if errors else 0)
+          EOF
+
+  dependency-audit:
+    name: dependency-audit
+    runs-on: ubuntu-latest
+    needs: [ruff, eslint]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Install
+        working-directory: backend
+        run: uv sync --all-groups --frozen
+      # The locked dependencies, not the ambient environment: --strict counts an un-auditable
+      # distribution as a failure, and the local `sidra` package is neither on PyPI nor something
+      # an audit has anything to say about. --no-emit-project drops it and keeps --strict meaningful.
+      - name: Audit
+        working-directory: backend
+        run: |
+          uv export --no-emit-project --format requirements-txt --no-hashes -o requirements-audit.txt
+          uv run pip-audit --strict -r requirements-audit.txt
+
+  frontend-audit:
+    name: frontend-audit
+    runs-on: ubuntu-latest
+    needs: [ruff, eslint]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          # The pin lives in frontend/package.json; there is no manifest at the repository root,
+          # and without this the action has nothing to read a version from and fails outright.
+          package_json_file: frontend/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - name: Install
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+      - name: Audit
+        working-directory: frontend
+        run: pnpm audit --audit-level=high
+
+  gitleaks:
+    name: gitleaks
+    runs-on: ubuntu-latest
+    needs: [ruff, eslint]
+    steps:
+      - uses: actions/checkout@v4
+      # The same image and the same flags as the GitLab job, rather than the action: --no-git scans
+      # the checked-out tree instead of one push's commit range, and --redact keeps a matched
+      # secret out of the log -- which on a public repository is the whole point.
+      - name: gitleaks
+        run: >
+          docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:latest
+          detect --no-git --redact --source /repo --config /repo/gitleaks.toml
+
+  # ---------------------------------------------------------------- test
+
+  pytest:
+    name: pytest
+    runs-on: ubuntu-latest
+    needs: [codeql, semgrep, dependency-audit, frontend-audit, gitleaks]
+    permissions:
+      contents: read
+      checks: write
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: sidra
+          POSTGRES_USER: sidra
+          POSTGRES_PASSWORD: sidra_dev
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U sidra -d sidra"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    env:
+      SIDRA_POSTGRES_HOST: localhost
+      SIDRA_POSTGRES_PORT: "5432"
+      SIDRA_POSTGRES_USER: sidra
+      SIDRA_POSTGRES_PASSWORD: sidra_dev
+      SIDRA_POSTGRES_DB: sidra
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Install
+        working-directory: backend
+        run: uv sync --all-groups --frozen
+      # The compose stack creates sidra_test from an init script; the CI service does not.
+      - name: Create the test database
+        env:
+          PGPASSWORD: sidra_dev
+        run: psql -h localhost -U sidra -d sidra -c 'CREATE DATABASE sidra_test OWNER sidra'
+      - name: Test
+        working-directory: backend
+        run: uv run pytest -m "not live" --junitxml=junit-unit.xml --cov=sidra --cov-report=xml:coverage.xml
+      # GitHub has no native JUnit viewer, so the per-test-case breakdown comes from a Check Run.
+      - name: Publish test report
+        if: ${{ !cancelled() }}
+        uses: dorny/test-reporter@v1
+        with:
+          fail-on-error: false
+          name: backend tests
+          path: backend/junit-unit.xml
+          reporter: java-junit
+      - name: Upload coverage
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-coverage
+          path: backend/coverage.xml
+          retention-days: 7
+
+  vitest:
+    name: vitest
+    runs-on: ubuntu-latest
+    needs: [codeql, semgrep, dependency-audit, frontend-audit, gitleaks]
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          # The pin lives in frontend/package.json; there is no manifest at the repository root,
+          # and without this the action has nothing to read a version from and fails outright.
+          package_json_file: frontend/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - name: Install
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+      # Both reporters: the junit one alone would lose the human-readable console log.
+      - name: Test
+        working-directory: frontend
+        run: pnpm test -- --reporter=default --reporter=junit --outputFile.junit=junit-frontend.xml
+      - name: Publish test report
+        if: ${{ !cancelled() }}
+        uses: dorny/test-reporter@v1
+        with:
+          fail-on-error: false
+          name: frontend tests
+          path: frontend/junit-frontend.xml
+          reporter: java-junit
+
+  # ---------------------------------------------------------------- coverage
+
+  coverage-gate:
+    name: coverage-gate
+    runs-on: ubuntu-latest
+    needs: [pytest]
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: sidra
+          POSTGRES_USER: sidra
+          POSTGRES_PASSWORD: sidra_dev
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U sidra -d sidra"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    env:
+      SIDRA_POSTGRES_HOST: localhost
+      SIDRA_POSTGRES_PORT: "5432"
+      SIDRA_POSTGRES_USER: sidra
+      SIDRA_POSTGRES_PASSWORD: sidra_dev
+      SIDRA_POSTGRES_DB: sidra
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Install
+        working-directory: backend
+        run: uv sync --all-groups --frozen
+      - name: Create the test database
+        env:
+          PGPASSWORD: sidra_dev
+        run: psql -h localhost -U sidra -d sidra -c 'CREATE DATABASE sidra_test OWNER sidra'
+      # If this fails, add the missing test. Never lower the threshold.
+      - name: Coverage gate
+        working-directory: backend
+        run: uv run pytest -m "not live" --cov=sidra --cov-fail-under=100 -q
+
+  frontend-coverage-gate:
+    name: frontend-coverage-gate
+    runs-on: ubuntu-latest
+    needs: [vitest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          # The pin lives in frontend/package.json; there is no manifest at the repository root,
+          # and without this the action has nothing to read a version from and fails outright.
+          package_json_file: frontend/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - name: Install
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+      # If this fails, add the missing test. Never lower the threshold.
+      - name: Coverage gate
+        working-directory: frontend
+        run: pnpm coverage
+
+  # ---------------------------------------------------------------- build
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    needs: [coverage-gate]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Build
+        working-directory: backend
+        run: uv build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backend-dist
+          path: backend/dist/
+          retention-days: 7
+
+  frontend-build:
+    name: frontend-build
+    runs-on: ubuntu-latest
+    needs: [frontend-coverage-gate]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          # The pin lives in frontend/package.json; there is no manifest at the repository root,
+          # and without this the action has nothing to read a version from and fails outright.
+          package_json_file: frontend/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - name: Install
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+      # `tsc -b` runs the strict app config, which is stricter than a bare --noEmit at the root.
+      - name: Build
+        working-directory: frontend
+        run: pnpm build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist/
+          retention-days: 7
+
+  # ---------------------------------------------------------------- docker-build
+
+  docker-build:
+    name: docker-build
+    runs-on: ubuntu-latest
+    needs: [build, frontend-build]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the backend image
+        run: docker build -t sidra-backend:${{ github.sha }} ./backend
+      - name: Build the frontend image
+        run: docker build -t sidra-frontend:${{ github.sha }} ./frontend
+      - name: Scan the backend image
+        uses: aquasecurity/trivy-action@0.28.0
+        env:
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1
+        with:
+          image-ref: sidra-backend:${{ github.sha }}
+          severity: HIGH,CRITICAL
+          exit-code: "1"
+      - name: Scan the frontend image
+        uses: aquasecurity/trivy-action@0.28.0
+        env:
+          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2
+          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1
+        with:
+          image-ref: sidra-frontend:${{ github.sha }}
+          severity: HIGH,CRITICAL
+          exit-code: "1"

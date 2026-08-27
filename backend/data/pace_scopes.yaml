@@ -1,0 +1,146 @@
+# The rows the Pace Explorer offers, and how each one is counted.
+#
+# A row is a (scope, unit) PAIR, not a corpus: Shas appears twice, once by amud and once by daf,
+# and the Rambam appears twice, once by perek and once by halachah. Several rows are not tracks at
+# all. Nothing here reads the ledger -- these are the cycles as the catalog counts them.
+#
+# `rule` says which level of a work's shape the count lives at:
+#   total     sum of unit_count           -- the level the work is addressed at
+#   parents   sum of len(shape)           -- the level above it (Rambam perakim, Moharan torot)
+#   children  sum of sum(shape)           -- the level below it (Shulchan Aruch seifim)
+#   aliyot    the stored aliyah rows      -- the only row that is not a `work` read
+#   daf       amud labels folded to daf   -- see the note on that row
+
+scopes:
+  - id: chumash.aliyah
+    scope_en: Chumash
+    rule: aliyot
+    granularity: aliyah
+
+  - id: neviim.perek
+    scope_en: Neviim
+    rule: total
+    corpus_ids: [neviim]
+    granularity: perek
+
+  - id: ketuvim.perek
+    scope_en: Ketuvim
+    rule: total
+    corpus_ids: [ketuvim]
+    granularity: perek
+
+  - id: tanach.perek
+    scope_en: Tanach
+    rule: total
+    corpus_ids: [torah, neviim, ketuvim]
+    granularity: perek
+    # The torah corpus also holds Parashat HaShavua, whose 432 stored rows are parshiyos and
+    # aliyot rather than perakim; filtering to PEREK is what makes this 929 and not 1,361.
+
+  - id: mishnah.perek
+    scope_en: Mishnah
+    rule: total
+    corpus_ids: [mishnah]
+    granularity: perek
+
+  - id: mishnah.mishnah
+    scope_en: Mishnah
+    rule: children
+    corpus_ids: [mishnah]
+    granularity: mishnah
+
+  - id: bavli.amud
+    scope_en: Talmud Bavli
+    rule: total
+    corpus_ids: [bavli]
+    granularity: daf_amud
+
+  - id: bavli.daf
+    scope_en: Talmud Bavli
+    rule: daf
+    corpus_ids: [bavli]
+    granularity: daf_amud
+    unit_singular: daf
+    unit_plural: daf
+    note: >-
+      2,684 daf carry text in Sefaria. The traditional count of 2,711 sums each masechta's final
+      daf number, which includes daf that hold no Gemara.
+
+  - id: mishneh_torah.perek
+    scope_en: Mishneh Torah
+    rule: parents
+    corpus_ids: [mishneh_torah]
+    granularity: perek
+
+  - id: mishneh_torah.halakhah
+    scope_en: Mishneh Torah
+    rule: total
+    corpus_ids: [mishneh_torah]
+    granularity: halakhah
+
+  - id: shulchan_aruch.siman
+    scope_en: Shulchan Aruch
+    rule: total
+    corpus_ids: [shulchan_aruch]
+    granularity: siman
+
+  - id: shulchan_aruch.seif
+    scope_en: Shulchan Aruch
+    rule: children
+    corpus_ids: [shulchan_aruch]
+    granularity: seif
+
+  - id: likutei_moharan.torah
+    scope_en: Likutei Moharan
+    rule: parents
+    ref_title_prefix: Likutei Moharan
+    granularity: torah_section
+
+  - id: shaarei_teshuvah.os
+    scope_en: Sha'arei Teshuvah
+    rule: total
+    ref_title_prefix: "Sha'arei Teshuvah"
+    granularity: os
+
+  - id: tanya.perek
+    scope_en: Tanya
+    rule: total
+    ref_title_prefix: Tanya
+    granularity: perek
+    # The shape carries six front-matter nodes that are not perakim of the Tanya. Excluding them
+    # leaves the five chalakim: 53 + 12 + 12 + 32 + 9.
+    exclude_titles:
+      - Title Page
+      - Approbation
+      - Compiler's Foreword
+      - Chinukh Katan
+
+  - id: bereshit_rabbah.perek
+    scope_en: Bereshit Rabbah
+    rule: parents
+    ref_title_prefix: Bereshit Rabbah
+    granularity: perek
+
+  - id: chovot.perek
+    scope_en: Chovot HaLevavot
+    rule: total
+    ref_title_prefix: Duties of the Heart
+    granularity: perek
+
+  - id: shemirat.perek
+    scope_en: Shemirat HaLashon
+    rule: total
+    ref_title_prefix: Shemirat HaLashon
+    granularity: perek
+
+  - id: orchot.shaar
+    scope_en: Orchot Tzadikim
+    rule: total
+    ref_title_prefix: Orchot Tzadikim
+    granularity: gate
+
+  - id: mesillat.perek
+    scope_en: Mesillat Yesharim
+    rule: total
+    ref_title_prefix: Mesillat Yesharim
+    granularity: perek
