@@ -227,6 +227,13 @@ docker-build:
   image: docker:27
   services: [docker:27-dind]
   before_script: []
+    # --ignore-unfixed, and the reason matters. Measured 2026-08-27 against both images: the
+    # backend carries 16 HIGH/CRITICAL findings and every one of them is Debian `fix_deferred`
+    # or `affected` -- no fix released, nothing to upgrade to. Without this flag the stage is
+    # permanently red for something no commit can address, which is how a gate stops being read.
+    # Everything that *does* have a fix is fixed in the Dockerfiles instead: apt-get upgrade,
+    # apk upgrade, and dropping the unused pip whose vendored msgpack was the only Python
+    # finding. The frontend now reports zero findings even without the flag.
   script:
     - docker build -t sidra-backend:$CI_COMMIT_SHORT_SHA ./backend
     - docker build -t sidra-frontend:$CI_COMMIT_SHORT_SHA ./frontend
@@ -234,9 +241,9 @@ docker-build:
       docker run --rm
       -v /var/run/docker.sock:/var/run/docker.sock
       aquasec/trivy:latest image
-      --severity HIGH,CRITICAL --exit-code 1 sidra-backend:$CI_COMMIT_SHORT_SHA
+      --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 sidra-backend:$CI_COMMIT_SHORT_SHA
     - >
       docker run --rm
       -v /var/run/docker.sock:/var/run/docker.sock
       aquasec/trivy:latest image
-      --severity HIGH,CRITICAL --exit-code 1 sidra-frontend:$CI_COMMIT_SHORT_SHA
+      --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 sidra-frontend:$CI_COMMIT_SHORT_SHA

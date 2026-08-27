@@ -34,6 +34,24 @@ have, which quietly weakened the image gate on exactly the Debian CVEs it most o
 with `--redact` — which on a public repository is the difference between finding a secret and
 printing it.
 
+### The first push, and the images it hardened
+`docker-build` was the one stage that failed on GitHub, and it was right to. Trivy on
+`python:3.13-slim` and `nginx:alpine` found HIGH/CRITICAL findings of two very different kinds, and
+the fix is different for each:
+
+- **Fixable, so fixed.** `nginx:alpine` carried openssl 3.5.7-r0 against a published 3.5.8-r0, so
+  the runtime stage now runs `apk upgrade --no-cache` and reports **zero** findings. The backend
+  reported msgpack 1.1.2 and setuptools — neither a dependency of this project: they live inside
+  the base image's bundled **pip**, which an image that runs `uv` never uses. `apt-get upgrade`
+  plus removing pip clears them.
+- **Unfixable, so ignored deliberately.** What remains on the backend is 16 Debian findings, every
+  one `fix_deferred` or `affected` — no fix released, nothing to upgrade to. `--ignore-unfixed` is
+  back in both pipelines with that measurement written beside it. A gate that stays red for
+  something no commit can address is a gate that stops being read.
+
+Verified after the change: both images build, the stack comes up healthy, and the API answers 277
+works and 25 advances through the hardened backend.
+
 ### Sefaria moved under us, and the live gate caught it
 Running the live suite to certify the release found two failures — upstream drift, not a regression.
 Sefaria no longer serves Even HaEzer's two one-node appendices, Seder HaGet and Seder Halitzah, as

@@ -2,6 +2,14 @@ FROM python:3.13-slim
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
+# Two pieces of hygiene the base image cannot do for us, both of them things Trivy gates on:
+#
+#   apt-get upgrade  takes Debian's own fixes for the base layer. What is left after it is the set
+#                    with no fix released, which is why the scan runs with --ignore-unfixed.
+#   pip removal      this image runs uv and never pip, and pip vendors its own copy of msgpack --
+#                    that vendored copy, not anything we depend on, is what the scanner reports.
+RUN apt-get update  && apt-get upgrade -y --no-install-recommends  && rm -rf /var/lib/apt/lists/*  && python -m pip uninstall -y pip setuptools || true
+
 WORKDIR /app
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy PYTHONUNBUFFERED=1
 

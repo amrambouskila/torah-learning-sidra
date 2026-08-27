@@ -30,6 +30,15 @@ PyPI), and 54 semgrep findings — of which the useful ones were two root contai
 `frontend/coverage/` that was never gitignored, and four invisible bidi characters now written as
 escapes. All clean.
 
+## Image hardening
+
+`docker-build` failed on the first push and was right to. Everything Trivy found with a fix
+available is now fixed in the Dockerfiles — `apt-get upgrade` on the backend, `apk upgrade` on the
+nginx stage, and the removal of the base image's bundled pip, which this image never uses and whose
+*vendored* msgpack was the only Python finding. What is left is 16 Debian entries with no fix
+released, which `--ignore-unfixed` skips in both pipelines. The frontend now reports zero findings
+even without the flag.
+
 ## The last thing found: Sefaria moved under us
 
 Two live tests failed on a change upstream, not on anything in this repo. Sefaria no longer serves

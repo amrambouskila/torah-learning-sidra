@@ -12,6 +12,9 @@ COPY tests ./tests
 RUN pnpm build
 
 FROM nginx:alpine
+# Alpine ships fixes ahead of the tag being rebuilt; without this the image carries whatever
+# openssl the last nginx:alpine build happened to pin, which Trivy rates HIGH and which has a fix.
+RUN apk upgrade --no-cache
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80

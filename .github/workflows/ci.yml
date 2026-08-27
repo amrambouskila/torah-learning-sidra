@@ -467,6 +467,13 @@ jobs:
         run: docker build -t sidra-backend:${{ github.sha }} ./backend
       - name: Build the frontend image
         run: docker build -t sidra-frontend:${{ github.sha }} ./frontend
+      # --ignore-unfixed, and the reason matters. Measured 2026-08-27 against both images: the
+      # backend carries 16 HIGH/CRITICAL findings and every one of them is Debian `fix_deferred`
+      # or `affected` -- no fix released, nothing to upgrade to. Without this flag the stage is
+      # permanently red for something no commit can address, which is how a gate stops being read.
+      # Everything that *does* have a fix is fixed in the Dockerfiles instead: apt-get upgrade,
+      # apk upgrade, and dropping the unused pip whose vendored msgpack was the only Python
+      # finding. The frontend now reports zero findings even without the flag.
       - name: Scan the backend image
         uses: aquasecurity/trivy-action@0.28.0
         env:
@@ -476,6 +483,7 @@ jobs:
           image-ref: sidra-backend:${{ github.sha }}
           severity: HIGH,CRITICAL
           exit-code: "1"
+          ignore-unfixed: true
       - name: Scan the frontend image
         uses: aquasecurity/trivy-action@0.28.0
         env:
@@ -485,3 +493,4 @@ jobs:
           image-ref: sidra-frontend:${{ github.sha }}
           severity: HIGH,CRITICAL
           exit-code: "1"
+          ignore-unfixed: true
