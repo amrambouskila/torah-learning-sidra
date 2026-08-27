@@ -467,6 +467,15 @@ jobs:
         run: docker build -t sidra-backend:${{ github.sha }} ./backend
       - name: Build the frontend image
         run: docker build -t sidra-frontend:${{ github.sha }} ./frontend
+      # The plain docker command rather than aquasecurity/trivy-action, for two reasons. It is
+      # byte-for-byte what .gitlab-ci.yml runs, so the two pipelines cannot drift; and the action
+      # publishes 0.x.y releases rather than the vendor-maintained major tags every other action
+      # here uses, so pinning it means naming a version that has to be checked to exist. Naming
+      # one that did not is what failed this stage.
+      #
+      # --scanners vuln because secrets are gitleaks' job, and a scanner finding both would make
+      # two stages fail for one cause.
+      #
       # --ignore-unfixed, and the reason matters. Measured 2026-08-27 against both images: the
       # backend carries 16 HIGH/CRITICAL findings and every one of them is Debian `fix_deferred`
       # or `affected` -- no fix released, nothing to upgrade to. Without this flag the stage is
@@ -475,22 +484,18 @@ jobs:
       # apk upgrade, and dropping the unused pip whose vendored msgpack was the only Python
       # finding. The frontend now reports zero findings even without the flag.
       - name: Scan the backend image
-        uses: aquasecurity/trivy-action@0.28.0
-        env:
-          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2
-          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1
-        with:
-          image-ref: sidra-backend:${{ github.sha }}
-          severity: HIGH,CRITICAL
-          exit-code: "1"
-          ignore-unfixed: true
+        run: >
+          docker run --rm
+          -v /var/run/docker.sock:/var/run/docker.sock
+          -e TRIVY_DB_REPOSITORY=public.ecr.aws/aquasecurity/trivy-db:2
+          aquasec/trivy:latest image
+          --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --scanners vuln
+          sidra-backend:${{ github.sha }}
       - name: Scan the frontend image
-        uses: aquasecurity/trivy-action@0.28.0
-        env:
-          TRIVY_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-db:2
-          TRIVY_JAVA_DB_REPOSITORY: public.ecr.aws/aquasecurity/trivy-java-db:1
-        with:
-          image-ref: sidra-frontend:${{ github.sha }}
-          severity: HIGH,CRITICAL
-          exit-code: "1"
-          ignore-unfixed: true
+        run: >
+          docker run --rm
+          -v /var/run/docker.sock:/var/run/docker.sock
+          -e TRIVY_DB_REPOSITORY=public.ecr.aws/aquasecurity/trivy-db:2
+          aquasec/trivy:latest image
+          --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --scanners vuln
+          sidra-frontend:${{ github.sha }}

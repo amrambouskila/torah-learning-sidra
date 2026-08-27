@@ -241,9 +241,9 @@ docker-build:
       docker run --rm
       -v /var/run/docker.sock:/var/run/docker.sock
       aquasec/trivy:latest image
-      --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 sidra-backend:$CI_COMMIT_SHORT_SHA
+      --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --scanners vuln sidra-backend:$CI_COMMIT_SHORT_SHA
     - >
       docker run --rm
       -v /var/run/docker.sock:/var/run/docker.sock
       aquasec/trivy:latest image
-      --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 sidra-frontend:$CI_COMMIT_SHORT_SHA
+      --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 --scanners vuln sidra-frontend:$CI_COMMIT_SHORT_SHA

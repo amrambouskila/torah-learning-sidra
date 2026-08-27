@@ -52,6 +52,13 @@ the fix is different for each:
 Verified after the change: both images build, the stack comes up healthy, and the API answers 277
 works and 25 advances through the hardened backend.
 
+Then it failed a second time, on `Unable to resolve action aquasecurity/trivy-action@0.28.0`. That
+action publishes `0.x.y` releases rather than the vendor-maintained major tag every other action in
+the workflow uses, so pinning it meant naming a version that had to be checked to exist -- and it
+did not. Both scans now run the plain `docker run aquasec/trivy` command instead: byte-for-byte
+what `.gitlab-ci.yml` runs, nothing to resolve, and the invocation that had already been verified
+locally. Every remaining action tag was then checked against the GitHub API; all eight return 200.
+
 ### Sefaria moved under us, and the live gate caught it
 Running the live suite to certify the release found two failures — upstream drift, not a regression.
 Sefaria no longer serves Even HaEzer's two one-node appendices, Seder HaGet and Seder Halitzah, as
